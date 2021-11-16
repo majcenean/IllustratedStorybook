@@ -1,0 +1,1334 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: 25px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================ NAV BUTTONS ================ */
+
+.button_index {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: silver;
+    text-shadow: 0px 0px 5px darkgray;
+    border: 2px solid silver;
+    box-shadow: 0px 0px 5px darkgray;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 33px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    vertical-align: bottom;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: left;
+    transition: 0.5s;
+}
+
+.button_index h2 {
+    color: silver;
+    text-shadow: 0px 0px 5px darkgray;
+    font-size: 70px;
+    padding-top: 3px;
+    padding-left: 3.5px;
+}
+
+.button_index h3 {
+    color: silver;
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.button_index:hover {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px lightgray;
+    width: 150px;
+    justify-content: left;
+}
+
+.button_index:hover h2 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+.button_index:hover h3 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+.button_back {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    color: silver;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    margin: 100px;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-name: fadeInUp_button;
+    transition: box-shadow 1s;
+}
+
+.button_back:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+
+.button_next {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    color: silver;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    margin: 100px;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-name: fadeInUp_button;
+    transition: box-shadow 1s;
+}
+
+.button_next:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes fadeInUp_button {
+    from {
+        transform: translate3d(0, 50px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 0.7
+    }
+}
+
+
+/* ================ INTRO QUOTES ================ */
+.intro_quote {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 500px;
+    margin: 200px;
+}
+
+.intro_emphasis {
+    font-style: italic;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 50px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+
+/*GERALT*/
+.geralt_bg {
+    background-color: slategrey;
+}
+
+
+.geralt_intro_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: 55px;
+    font-size: 40px;
+    margin: 0px 100px 0px 100px;
+    width: 800px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.geralt_intro_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: 35px;
+    font-size: 20px;
+    margin: 0px 100px 0px 100px;
+    width: 800px;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.bg_img_1 {
+    width: 800px;
+    height: 800px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -5;
+    opacity: 0.6;
+}
+
+
+/* ================ APPEARANCE/BACKGROUND ================ */
+
+/*GERALT*/
+.geralt_bg_1a {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.geralt_bg_1 {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 23%;
+    left: 15%;
+    width: 300px;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.geralt_bg_2 {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    margin: 75px 100px 0px 100px;
+    width: 300px;
+    animation-delay: 3s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.geralt_bg_3 {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    width: 900px;
+    animation-delay: 5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.geralt_bg_emphasis {
+    font-style: italic;
+    color: white;
+}
+
+.freak_1 {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 500px;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.freak_2 {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    width: 480px;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.swords {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 15%;
+    left: 35%;
+    transform: rotate(-30deg);
+}
+
+/* ================ im sooo lonelyyyy im mr lonelyyyyy ive got noboddyyy ================ */
+
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.loneliness_bg {
+    background-color: black;
+}
+
+.alone_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 600px;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+}
+
+.alone_emph {
+    font-size: 40px;
+}
+
+.alone_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    width: 700px;
+    animation-delay: 2.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+/* ================ but its ur own gd fault.... ================ */
+
+.isolation_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    width: 400px;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.isolation_emph {
+    font-style: italic;
+    color: lightgray;
+}
+
+.isolation_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    width: 300px;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.eye {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 8%;
+    left: 30%;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.elixirs {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 6%;
+    right: 40%;
+    animation-name: fadeInUp;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+/* ================ oh its his destiny. ok ================ */
+
+.daughter_bg {
+    background-color: #6a736c;
+}
+
+.daughter_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 25%;
+    left: 20%;
+    width: 600px;
+    animation-delay: 3s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: disappear;
+}
+
+.daughter_emph {
+    font-size: 35px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.daughter_eyes {
+    width: 912px;
+    height: 412px;
+    background-image: url(../../img/geralt/ciri_eyes.gif);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -206px;
+    margin-left: -456px;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: appear;
+}
+
+.daughter_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+}
+
+.daughter_2a {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    font-size: 70px;
+    animation-delay: 8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 7s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.daughter_2b {
+    position: absolute;
+    bottom: 25%;
+    right: 30%;
+    font-size: 40px;
+    animation-delay: 8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.daughter_2c {
+    position: absolute;
+    bottom: 15%;
+    right: 40%;
+    font-size: 60px;
+    animation-delay: 8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    opacity: 0;
+    animation-delay: 7s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.daughter_2d {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    font-size: 40px;
+    animation-delay: 8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    opacity: 0;
+    animation-delay: 9s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.daughter_2e {
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    font-size: 20px;
+    line-height: 50px;
+    animation-delay: 8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 7s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.daughter_2f {
+    position: absolute;
+    bottom: 0%;
+    right: 75%;
+    font-size: 35px;
+    animation-delay: 8s;
+    line-height: 30px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 9s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.daughter_2g {
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    font-size: 20px;
+    animation-delay: 8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 10s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.daughter_2h {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 20px;
+    line-height: 40px;
+    animation-delay: 8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 9s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.daughter_2i {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    font-size: 110px;
+    text-shadow: 0px 0px 50px lightgray;
+    font-style: italic;
+    text-transform: uppercase;
+    animation-delay: 8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 11s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.daughter_2j {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    font-size: 110px;
+    text-shadow: 0px 0px 50px darkgray;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    animation-delay: 8s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 13s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+/* ================ who is this child, wolf? ================ */
+
+.ciri_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    animation-duration: 1.5s;
+    animation-iteration-count: 4;
+    animation-fill-mode: both;
+    animation-name: glitch_disappear;
+}
+
+@keyframes glitch_disappear {
+    0% {
+        opacity: 1;
+        transform: translate(-14px, 16px);
+    }
+
+    10% {
+        transform: translate(12px, -12px);
+        opacity: 0;
+    }
+
+    20% {
+        transform: translate(-15px, -14px);
+        opacity: 1;
+    }
+
+    30% {
+        transform: translate(17px, 14px);
+        opacity: 0;
+    }
+
+    40% {
+        transform: translate(0px, 12px);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0px, 0px);
+    }
+}
+
+.ciri_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    width: 150px;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+    animation-fill-mode: both;
+    animation-name: appear;
+}
+
+.ciri_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 28%;
+    left: 25%;
+    width: 300px;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-delay: 8.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+}
+
+
+.ciri_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    bottom: 30%;
+    right: 25%;
+    width: 260px;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-delay: 8.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+}
+
+.ciri_5 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    position: absolute;
+    bottom: 20%;
+    right: 25%;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-delay: 8.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+}
+
+/* ================ things go to hell in a handbasket ================ */
+
+.coup_bg {
+    background-color: #6a736c;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
+    animation-name: coup_bg_change;
+    transition: 1s;
+}
+
+@keyframes coup_bg_change {
+    0% {
+        background-color: #6a736c;
+    }
+
+    10% {
+        background-color: #1a3952;
+    }
+
+    100% {
+        background-color: #1a3952;
+    }
+}
+
+.coup_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    width: 450px;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 8s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: disappear;
+    opacity: 0;
+}
+
+.coup_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    width: 450px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    animation-delay: 9.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    opacity: 0;
+}
+
+.coup_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 35px;
+    width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 120%;
+}
+
+.coup_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    width: 350px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    opacity: 0;
+}
+
+.coup_5 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    width: 250px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    opacity: 0;
+}
+
+.tower {
+    width: 1200px;
+    margin-left: -600px;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    z-index: -1;
+}
+
+
+.aftermath_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 50px;
+    width: 900px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    animation-delay: 7s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: disappear;
+    opacity: 0;
+}
+
+.aftermath_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    width: 440px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    animation-duration: 1.5s;
+    animation-delay: 8s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    opacity: 0;
+}
+
+.aftermath_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 35px;
+    width: 500px;
+    position: absolute;
+    top: 28%;
+    right: 14%;
+    animation-duration: 1.5s;
+    animation-delay: 10s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    opacity: 0;
+}
+
+/* ================ maybe its like the friends we meet along the way or something ================ */
+
+.comrade_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 450px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    opacity: 0;
+}
+
+.comrade_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 600px;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    opacity: 0;
+}
+
+.comrade_img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    animation: 1s comrade_symbol infinite;
+    transition: 1s;
+}
+
+@keyframes comrade_symbol {
+    0% {
+        transform: skew(0deg);
+    }
+    20% {
+        transform: skew(8deg);
+    }
+    60% {
+        transform: translateY(20px);
+    }
+    90% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+.dandelion_comrade_bg {
+    background-color: #8e4585;
+}
+
+.milva_comrade_bg {
+    background-color: #57281d;
+}
+
+
+.regis_comrade_bg {
+    background-color: darkolivegreen;
+}
+
+.cahir_comrade_bg {
+    background-color: #1a3952;
+}
+
+.angouleme_comrade_bg {
+    background-color: brown;
+}
+
+
+.regis_advice_bg {
+    background-color: #273E33;
+}
+
+.regis_advice_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.regis_advice_1a {
+    position: absolute;
+    left: 20%;
+    width: 500px;
+}
+
+.regis_advice_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    width: 470px;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    opacity: 0;
+}
+
+
+/* ================ finally we end with that famous quote ================ */
+
+
+.final_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 22px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+    animation-name: disappear;
+    opacity: 0;
+}
+
+.final_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 22px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    opacity: 0;
+}
+
+.final_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 22px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    opacity: 0;
+}
+
+
+
+
+
+.leader_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 700px;
+    animation-duration: 1.5s;
+    animation-delay: 8s;
+    animation-fill-mode: both;
+    animation-name: disappear;
+    opacity: 0;
+}
+
+.leader_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-delay: 12s;
+    animation-fill-mode: both;
+    animation-name: disappear;
+    opacity: 0;
+}
+
+.leader_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-delay: 15s;
+    animation-fill-mode: both;
+    animation-name: disappear;
+    opacity: 0;
+}
+
+.leader_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 45px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -250px;
+    width: 800px;
+    animation-duration: 1.5s;
+    animation-delay: 16s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+/* ================ end screen ================ */
+
+.end {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 60px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.restart_button {
+    width: 400px;
+    height: 50px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -25px;
+    padding: 10px;
+    border: 5px white double;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.restart_button:hover {
+    border: 5px silver double;
+    color: silver;
+}
+
+.index_button {
+    width: 400px;
+    height: 50px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -25px;
+    padding: 10px;
+    border: 5px white double;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.index_button:hover {
+    border: 5px silver double;
+    color: silver;
+}

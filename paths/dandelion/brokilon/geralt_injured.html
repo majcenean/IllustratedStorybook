@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE WIEDŹMIN</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/dandelion/dandelion.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_geralt.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="geralt_bg">
+
+    <div class="geralt_injured_1">
+        A few weeks later, having been healed by the dryads of Brokilon, Geralt wondered what mistakes he had made during the fight. And came to the conclusion he hadn’t made any. His only mistake was made before the fight. He ought to have fled before it even began.
+    </div>
+    <div class="geralt_injured_2">
+        Geralt could see nothing and hear nothing. (...) He felt cold. His entire body was cold, numb, and foreign.
+        <br><br>
+        “Hold on, Geralt.”
+        <br><br>
+        The pain returned. It bored into his guts and his temples, and it radiated all the way to his eyes, to his ears, to the top of his head.
+        He was losing consciousness.
+    </div>
+    <div class="geralt_injured_3">
+        Darkness. Bitter cold.
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="../intro/dandelion_coward.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="dandelion_brokilon_1.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE WIEDŹMIN</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/geralt/geralt.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_geralt.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="geralt_bg">
+
+    <!--Introductory Quote-->
+    <div class="#">
+        <div class="geralt_bg_1a">
+            The stranger was not old, but <span class="geralt_bg_emphasis">his hair was almost entirely white.</span>
+            <br><br>
+        </div>
+        <div class="geralt_bg_1">
+            Beneath his cloak, he wore a worn black jacket of leather, studded with silver.
+            <br><br>
+            As he took off his cloak, those around him noticed that he carried a <i>sword</i>⁠ — not something unusual in itself, nearly every man in Vizima carried a weapon ⁠— but <i>no one carried a sword strapped to his back as if it were a bow or a quiver.</i>
+        </div>
+        <div class="geralt_bg_2">
+            He sheathed his sword behind his back and straightened the hilt above his right shoulder, then he tied a strip of leather across his forehead, pushing his hair behind his ears. He pulled on long gauntlets, bristling with short silver studs.
+            <br><br>
+            He looked at the sun, his pupils narrowed into vertical slits, and he thought to himself,
+        </div>
+        <div class="geralt_bg_3">
+            <span class="geralt_bg_emphasis">
+                What a beautiful day. A beautiful day for a fight.
+            </span>
+        </div>
+    </div>
+<div class="freak_1">
+        "Do you know him?"<br><br>
+    "It's some albino," giggled a man. "Albino, mutant, <span class="geralt_bg_emphasis">freak of nature.</span> And this sort of thing is allowed to enter pubs among decent people."
+    </div>
+    <div class="freak_2">
+        "People are saying he's a witcher."<br><br>
+        "And what's a witcher?"<br><br>
+        "A hired magician, a conjurer for a fistful of silver. I told you, a freak of nature. <span class="geralt_bg_emphasis">An insult to human and divine laws.</span> They ought to be burned, the likes of him."
+    </div>
+    
+    <img src="../../../img/geralt/swords.png" class="swords">
+
+    
+    <!-- BACK BUTTON-->
+    <a href="geralt.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="geralt_alone.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+
+</body></html>

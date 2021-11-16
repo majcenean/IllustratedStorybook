@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE WIEDŹMIN</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/geralt/geralt.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_geralt.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="geralt_bg">
+
+    <div class="isolation_1">
+        "Do you know what your problem is, Geralt? <span class="isolation_emph">You think you're different. You flaunt your otherness,</span> what you consider abnormal.
+        <br><br>You aggressively impose that abnormality on others, not understanding that for people who think clear-headedly you're the most normal man under the sun, and they all wish everybody was so normal.
+        <br><br>What of it that you have <span class="isolation_emph">quicker reflexes</span> than most and <span class="isolation_emph">vertical pupils in sunlight?</span> That you can <span class="isolation_emph">see in the dark like a cat?</span> That you know <span class="isolation_emph">a few spells.</span> Big deal."
+    </div>
+    <div class="isolation_2">
+        "And the fact that I'm saddened — the fact that I know I'm losing you — is cellular memory. The atavistic remnants of feelings in a <span class="isolation_emph">mutant purged of emotion—</span>"
+        <br><br>
+        "I can't stand it when you talk like that!" she exploded. "I can't bear it when you use that word. Don't ever use it again in my presence.
+        <br><br>
+        "Does it change the fact? After all, I am a <span class="isolation_emph">mutant.</span>"
+        <br><br>
+        "There is no fact. Don't utter that word in front of me."
+    </div>
+    
+    <img src="../../../img/geralt/eye.png" class="eye">
+    <img src="../../../img/geralt/potions.png" class="elixirs">
+
+
+    <!-- BACK BUTTON-->
+    <a href="geralt_alone.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="../daughter/geralt_daughter.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+
+</body></html>

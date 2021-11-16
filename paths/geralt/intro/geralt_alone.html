@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE WIEDŹMIN</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/geralt/geralt.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_geralt.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+
+    </script>
+</head>
+
+<body class="loneliness_bg">
+    <div class="alone_1">
+        "I dream of sailing away one day," she continued. "All alone. Set sail and put out to sea... Far, far away. Only water and sky all around. <br><br>
+        <span class="alone_emph">And I'm alone, completely alone, endlessly alone among the strange and hostile elements. <br><br>Solitude amid a sea of strangeness.</span>
+        <br><br>
+        Don't you dream of that?"
+    </div>
+    <div class="alone_2">
+        <i>No, I don't,</i> he thought. <i>I have it every day.</i>
+    </div>
+
+    <!-- BACK BUTTON-->
+    <a href="geralt_bg.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="geralt_isolation.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+
+</body>
+
+</html>

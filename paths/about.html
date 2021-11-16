@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_default.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="about_bg">
+
+    <div class="about">
+        The Witcher universe was created by Andrzej Sapkowski, a contemporary Polish fantasy author. <br><br>
+        The text for this project was taken from the series over the 8 books in <i>The Witcher</i> series: <br><br>
+        <ul>
+            <li><i>The Last Wish</i> (trans. Danusia Stok),</li>
+            <li><i>The Sword of Destiny</i> (trans. David French), </li>
+            <li><i>Blood of Elves</i> (trans. Danusia Stok), </li>
+            <li><i>Time of Contempt</i> (trans. David French), </li>
+            <li><i>Baptism of Fire</i> (trans. David French), </li>
+            <li><i>The Tower of the Swallow</i> (trans. David French), </li>
+            <li><i>Lady of the Lake</i> (trans. David French), and </li>
+            <li><i>Season of Storms</i> (trans. David French).</li>
+        </ul>
+        <br>
+        The saga addresses the witcher Geralt and others' reactions to the raising and later disappearance of a very special girl, Cirilla "Ciri" of Cintra, who is Geralt's daughter by bonds of destiny.<br><br>
+        In seeking to rescue his daughter, Geralt finds himself accompanied by a group of comrades willing to share in his journey. Their resemblance of a traditional RPG team of heroes [with two swordsmen, a ranger, a healer, and a rogue] inspired this concept. <br><br>
+        This project serves as a telling of their story reimagined in the medium of web design, an  interactive storybook woven from curated scenes and quotes from the series.
+        <br><br>
+
+        <a href="../index.html">
+            <div class="encourage_select">
+                Select a character to find out more about their quest.
+            </div>
+        </a>
+
+        <br><br>
+        <br><br>
+        <br><br>
+    </div>
+
+
+</body></html>

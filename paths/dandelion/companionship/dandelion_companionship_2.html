@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE POET</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/dandelion/dandelion.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_dandelion.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="dandelion_companion_bg">
+
+    <div class="companion_5a">
+        “What could I have done?” Dandelion whispered.
+        <i>“What could I have done?”</i>
+    </div>
+    <div class="companion_5b">
+        “I don’t know,” answered the dryad.
+    </div>
+    <div class="companion_5c">
+        “I’m not guilty of anything.”
+    </div>
+    <div class="companion_5d">
+        “Yes, you are.”
+    </div>
+    <div class="companion_5e">
+        “No! I am not…”
+    </div>
+    <div class="companion_6">
+        He jumped to his feet, making the branches of his makeshift bed creak. Geralt sat beside him.
+        <br><br>
+        “Aren’t you?” he asked coolly. “I wonder what else you dreamed about. That you’re a frog? Calm down. You aren’t. Did you dream that you’re a chump? Well, that dream might have been prophetic.”
+        <br><br>
+        Dandelion looked all around. They were completely alone in the clearing.
+    </div>
+    <div class="companion_7">
+        “Where is she? Where are they? Geralt, I spoke with a dryad a moment ago. She was talking in the Common Speech without an accent and told me…”
+        <br><br><br>
+        “None of the dryads in that group spoke the Common Speech without an accent.
+        <br><br><span class="companion_emph">You dreamed it, Dandelion.</span>
+        <br><br>This is Brokilon. Many things can be dreamed here.”
+    </div>
+
+    <!-- BACK BUTTON-->
+    <a href="dandelion_companionship_1.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="dandelion_companionship_3.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

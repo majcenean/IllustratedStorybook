@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE BANDIT GIRL</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/angouleme/angouleme.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_angouleme.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+
+    </script>
+</head>
+
+<body class="angouleme_backstory_bg">
+    <!--Introductory Quote-->
+    <div class="story_1">
+        "My mother," Angouleme finally said, "was a Cintrian noblewoman, from a high-ranking family, I believe. The family had a sea-cat in its coat of arms.
+        <br><br><br><br><br><br>
+        That family though — sod them and their sea-cat — disowned me, because my mother was said to have slept with some churl, a stableman, I believe, and so I was <br><br>
+        <span class="story_emph">
+        a bastard,</span><br><br><span style="line-height: 50px">a disgrace, <br>an ignominous stain <br>on their honour.</span>
+    </div>
+    <div class="story_2">
+        I'd show it to you, I used to have a little medallion with that bloody sea-cat on it, from my mother, but I lost it at dice...
+    </div>
+    
+    <img src="../../../img/angouleme/sea_cat.png" class="story_img_1">
+    <img src="../../../img/angouleme/dice.png" class="story_img_2">
+
+    <!-- BACK BUTTON-->
+    <a href="angouleme_bg.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="angouleme_backstory_2.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+    
+    <!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+
+</body>
+
+</html>

@@ -1,0 +1,1263 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Francois One', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: justify;
+    line-height: 25px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================ NAV BUTTONS ================ */
+
+.button_index {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: silver;
+    text-shadow: 0px 0px 5px darkgray;
+    border: 2px solid silver;
+    box-shadow: 0px 0px 5px darkgray;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 33px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    vertical-align: bottom;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: left;
+    transition: 0.5s;
+}
+
+.button_index h2 {
+    color: silver;
+    text-shadow: 0px 0px 5px darkgray;
+    font-size: 70px;
+    padding-top: 3px;
+    padding-left: 3.5px;
+}
+
+.button_index h3 {
+    color: silver;
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.button_index:hover {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px lightgray;
+    width: 150px;
+    justify-content: left;
+}
+
+.button_index:hover h2 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+.button_index:hover h3 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+.button_back {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    color: silver;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    margin: 100px;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-name: fadeInUp_button;
+    transition: box-shadow 1s;
+}
+
+.button_back:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+
+.button_next {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    color: silver;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    margin: 100px;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-name: fadeInUp_button;
+    transition: box-shadow 1s;
+}
+
+.button_next:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes fadeInUp_button {
+    from {
+        transform: translate3d(0, 50px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 0.7
+    }
+}
+
+
+/* ================ INTRO QUOTES ================ */
+.intro_quote {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 500px;
+    margin: 200px;
+}
+
+.intro_emphasis {
+    font-style: italic;
+    color: darkred;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 50px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+/*REGIS INTRO QUOTE*/
+.regis_bg {
+    background-color: darkolivegreen;
+}
+
+.regis_intro_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: 40px;
+    font-size: 30px;
+    margin: 100px 100px 0px 100px;
+    width: 800px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.regis_intro_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: 90px;
+    font-size: 50px;
+    margin: 0px 100px 200px 100px;
+    width: 1200px;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.regis_intro_emphasis {
+    font-style: italic;
+}
+
+
+.bg_img_1 {
+    width: 800px;
+    height: 800px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -5;
+    opacity: 0.6;
+}
+
+
+/* ================ APPEARANCE/BACKGROUND ================ */
+
+.regis_bg_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.regis_bg_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    width: 500px;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.regis_bg_emphasis {
+    font-style: italic;
+    color: olivedrab;
+}
+
+.regis_bg_emphasis a {
+    text-decoration: none;
+    font-size: 40px;
+    color: olivedrab;
+    text-shadow: 0px 0px 5px black;
+    transition: 0.6s;
+    position: absolute;
+    left: 20%;
+    top: 120%;
+}
+
+.regis_bg_emphasis a:hover {
+    text-decoration: none;
+    color: silver;
+    text-shadow: 1px 1px 20px #273E33;
+    letter-spacing: 1px;
+}
+
+.bag {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right: 22%;
+    top: 8%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+/* ================ HERBS ================ */
+.sage_contain {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sage_text {
+    width: 280px;
+    height: 50px;
+    position: relative;
+    top: 0%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.sage {
+    width: 280px;
+    height: 280px;
+    transition: 1s;
+}
+
+.sage:hover {
+    animation-name: herb_hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes herb_hover {
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.sage:hover + .sage_text {
+    opacity: 1;
+}
+
+.basil_contain {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.basil {
+    width: 280px;
+    height: 280px;
+    transition: 1s;
+}
+
+.basil:hover {
+    animation-name: herb_hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.basil_text {
+    width: 280px;
+    height: 50px;
+    position: relative;
+    top: 0%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.basil:hover + .basil_text {
+    opacity: 1;
+}
+
+.wormwood_contain {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wormwood {
+    width: 280px;
+    height: 280px;
+    transition: 1s;
+}
+
+.wormwood:hover {
+    animation-name: herb_hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.wormwood_text {
+    width: 280px;
+    height: 50px;
+    position: relative;
+    top: 0%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.wormwood:hover + .wormwood_text {
+    opacity: 1;
+}
+
+.coriander_contain {
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coriander {
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+}
+
+.coriander_text {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: 0%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.coriander:hover {
+    animation-name: herb_hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.coriander:hover + .coriander_text {
+    opacity: 1;
+}
+
+.aniseed_contain {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aniseed {
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+}
+
+.aniseed_text {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: 0%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.aniseed:hover {
+    animation-name: herb_hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.aniseed:hover + .aniseed_text {
+    opacity: 1;
+}
+
+
+.cinnamon_contain {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cinnamon {
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+}
+
+.cinnamon_text {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: 0%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.cinnamon:hover {
+    animation-name: herb_hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.cinnamon:hover + .cinnamon_text {
+    opacity: 1;
+}
+
+
+
+/* ================ HOME ================ */
+
+.home_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.home_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 1.5s;
+}
+
+.home_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3s;
+}
+
+.cottage {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 1.5s;
+}
+
+.alchemy {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 7%;
+    right: 15%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 3s;
+}
+
+
+
+/* ================ TURNING POINT ================ */
+
+
+.regis_reveal_bg {
+    background-color: black;
+}
+
+body .regis_reveal_1 {
+    margin: 0px;
+}
+
+.regis_reveal_1 {
+    font-family: 'Francois One', sans-serif;
+    color: silver;
+    text-align: left;
+    line-height: 30px;
+    font-size: 20px;
+    padding-left: 100px;
+    margin: 0px 100px 25px 100px;
+    margin-top: 0;
+    width: 1000px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.regis_reveal_2 {
+    font-family: 'Francois One', sans-serif;
+    color: silver;
+    text-align: left;
+    line-height: 40px;
+    font-size: 50px;
+    padding-left: 100px;
+    margin: 100px 0px 100px 100px;
+    width: 1000px;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.regis_reveal_emphasis {
+    font-style: italic;
+    color: darkred;
+}
+
+.regis_turn_bg {
+    background-color: darkgray;
+}
+
+.regis_turn_1 {
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 30px;
+    width: 1100px;
+    margin-left: -550px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    animation: fadeInUp 1.5s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_turn_2 {
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    width: 600px;
+    margin-left: -300px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    animation: fadeInUp 1.5s linear;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+.regis_turn_3 {
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    width: 600px;
+    margin-left: -300px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    animation: fadeInUp 1.5s linear;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+.regis_turn_emphasis {
+    color: darkolivegreen;
+    font-style: italic;
+}
+
+.regis_turn_4 {
+    color: #6B6B6B;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    width: 600px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: fadeInUp 1.5s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_turn_5 {
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    width: 600px;
+    margin-left: -300px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    animation: fadeInUp 1.5s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_turn_6 {
+    color: #6B6B6B;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    width: 600px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    animation: fadeInUp 1.5s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_turn_7 {
+    color: #6B6B6B;
+    text-align: justify;
+    line-height: normal;
+    font-size: 100px;
+    width: 100px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    animation: fadeInUp 1.5s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_turn_8 {
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    width: 600px;
+    margin-left: -300px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    animation: fadeInUp 1.5s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_turn_8 a {
+    color: black;
+}
+
+.regis_turn_emphasis_vanish {
+    color: black;
+    font-style: italic;
+}
+
+.regis_turn_emphasis_vanish:hover {
+    animation: disappear 1s linear;
+    animation-fill-mode: both;
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* ================ RESOLUTION ================ */
+
+.regis_resolution_bg {
+    background-color: #273E33;
+}
+
+.regis_res_emphasis_appear {
+    color: silver;
+    font-style: italic;
+    animation: appear 1.5s linear;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.regis_res_1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 600px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_2 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 600px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_3 {
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    width: 500px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_4 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 600px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_5 {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 400px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    animation: fadeInUp 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_emphasis {
+    color: silver;
+    font-style: italic;
+}
+
+.regis_res_companions {
+    color: black;
+    font-style: italic;
+    transition: 1s;
+}
+
+.regis_res_companions:hover {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+.regis_res_6 {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    width: 500px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 25px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+
+.regis_res_7 {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    width: 400px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_7a {
+    position: absolute;
+    left: 10%;
+    top: 41.5%;
+    width: 400px;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_7b {
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    width: 400px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_8 {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 600px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_9 {
+    position: absolute;
+    right: 15%;
+    top: 45%;
+    width: 600px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_10 {
+    position: absolute;
+    right: 15%;
+    top: 55%;
+    width: 600px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 25px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.regis_res_stupid {
+    color: darkred;
+    font-style: italic;
+    transition: 1s;
+    text-shadow: 2px 2px 20px black;
+}
+
+.regis_res_stupid:hover {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px black;
+}
+
+.sober_1 {
+    position: absolute;
+    right: 15%;
+    top: 35%;
+    width: 600px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 25px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.sober_2 {
+    position: absolute;
+    right: 15%;
+    top: 55%;
+    width: 600px;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 25px;
+    animation: fadeInUp 1s linear;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.sober_emphasis {
+    font-size: 40px;
+}
+
+.humanity_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.humanity_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    width: 500px;
+    animation-delay: 2s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.humanity_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.humanity_3a {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 60px;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    width: 500px;
+    animation-delay: 2s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.humanity_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    width: 500px;
+    animation-delay: 2s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.end {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 60px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.restart_button {
+    width: 400px;
+    height: 50px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -25px;
+    padding: 10px;
+    border: 5px white double;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.restart_button:hover {
+    border: 5px silver double;
+    color: silver;
+}
+
+.index_button {
+    width: 400px;
+    height: 50px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -25px;
+    padding: 10px;
+    border: 5px white double;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.index_button:hover {
+    border: 5px silver double;
+    color: silver;
+}

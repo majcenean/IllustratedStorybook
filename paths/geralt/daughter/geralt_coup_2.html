@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE WIEDŹMIN</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/geralt/geralt.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_geralt.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="daughter_bg">
+
+    <div class="coup_4">
+        The Witcher cursed under his breath. <br><br>
+        He did not understand why Ciri had fled there.
+        <br><br>
+        He had seen her horse fall as he rushed after her along the tops of the walls. He saw her leap nimbly to her feet, but instead of running along the winding road encircling the peak, she had suddenly rushed uphill, towards the solitary tower.
+        <br><br>
+        <span style="font-size: 30px">
+        He intended to follow Ciri up the steps when he heard a sound. From above. He quickly turned around.
+        </span>
+    </div>
+    <div class="coup_5">
+        The staff fell with enough force to break his forearm. The pain utterly blinded him.
+        <br><br>
+        Now Geralt could see nothing and hear nothing.
+        <br><br>
+        He was sinking, submerging into something warm.
+        <br><br>He thought his opponent had gone. He was astonished, then, when a fierce blow from the iron staff struck his thigh, smashing the shaft of his femur.
+        <br><br>
+        <i>If anything occurred after that, he did not remember it.</i>
+    </div>
+
+    <img src="../../../img/geralt/tower.png" class="tower">
+
+    <!-- BACK BUTTON-->
+    <a href="geralt_coup_1.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="geralt_aftermath.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+
+
+</body></html>

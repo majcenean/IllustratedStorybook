@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE VAMPIRE</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/regis/regis_party.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_regis_afterreveal.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="party_dark">
+
+    <div class="party_text_5a">
+         The villagers almost beat me to death, but fortunately they didn't know how to go about it... 
+    </div>
+    
+    <img src="../../../img/regis/stakes.png" class="party_image_5b">
+    <div class="party_text_5b">
+        They punctured me with stakes,
+    </div>
+    
+    <img src="../../../img/regis/axe.png" class="party_image_5c">
+    <div class="party_text_5c">
+        chopped my head off,
+    </div>
+    
+    <img src="../../../img/regis/holy_water.png" class="party_image_5d">
+    <div class="party_text_5d">
+        poured holy water all over me,
+    </div>
+    
+    <a href="../resolution/regis_resolution_3.html"><img src="../../../img/regis/grave.png" class="party_image_5e"></a>
+    <div class="party_text_5e">
+        and buried me.
+    </div>
+    
+    <div class="party_text_5f">
+        Can you imagine how I felt when I 
+        <a href="../resolution/regis_resolution_3.html">woke up?</a>
+    </div>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+
+</body></html>

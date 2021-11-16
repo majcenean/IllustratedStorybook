@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE ARCHER</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/milva/milva.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_milva.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+      var msg  = document.title;
+      var speed = 150;
+      var endChar = " . . . ";
+      var pos = 15;
+      
+      function moveTitle()
+      {
+       	var ml = msg.length;
+      		
+      	title = msg.substr(pos,ml) + endChar + msg.substr(0,pos);
+    	document.title = title;
+      	
+        pos++;
+    	if (pos > ml) pos=0;
+        window.setTimeout("moveTitle()",speed);
+      }
+  
+      moveTitle();
+  </script>
+</head>
+<body class="milva_bg">
+<!--Introductory Quote-->
+    <div class="intro_quote">
+        <div class="milva_bg_1">
+            [He is travelling with] a woman who has <span class="milva_bg_emphasis_1">dark blond hair,</span> worn in a <span class="milva_bg_emphasis_2">plait.</span>
+        </div>
+        <div class="milva_bg_2">
+        Fired from her bow, an <span class="milva_bg_emphasis_2">arrow</span> penetrated two hundred feet within a heartbeat, and at a hundred paces had more than enough momentum to <span class="milva_bg_emphasis_2">effectively strike a deer and a man, if he wore no armor,</span> pierced through. Milva rarely hunted animals larger than deer, or men in heavy armor.
+        </div>
+    </div>
+    
+    <div class="bow">
+        <img src="../../../img/milva/bow.png" width="500px" height="500px" style="transform: rotate(270deg)"></div>
+    
+    <div class="hair_braided">
+        <img src="../../../img/milva/braid.png" width="300px" height="300px"></div>
+
+
+<!-- BACK BUTTON-->
+    <a href="milva.html">
+    <div class="button_back">
+        BACK
+        <br>&#8617;
+    <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+    </div>
+    </a>
+    
+<!-- NEXT BUTTON-->
+    <a href="milva_strength.html">
+    <div class="button_next">
+        NEXT
+        <br>&#8618;
+    <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+    </div>
+    </a>
+    
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body>
+
+</html>

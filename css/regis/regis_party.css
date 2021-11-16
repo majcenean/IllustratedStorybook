@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+    {
+    font-family: 'Fondamento', cursive;
+    color: white;
+    text-align: justify;
+    line-height: 25px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.button_index {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: silver;
+    text-shadow: 0px 0px 5px darkgray;
+    border: 2px solid silver;
+    box-shadow: 0px 0px 5px darkgray;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 33px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    vertical-align: bottom;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: left;
+    transition: 0.5s;
+}
+
+.button_index h2 {
+    color: silver;
+    text-shadow: 0px 0px 5px darkgray;
+    font-size: 70px;
+    padding-top: 3px;
+    padding-left: 3.5px;
+}
+
+.button_index h3 {
+    color: silver;
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.button_index:hover {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px lightgray;
+    width: 150px;
+    justify-content: left;
+}
+
+.button_index:hover h2 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+.button_index:hover h3 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+/* ============================== PAGE START */
+.party_start {
+    background-color: #7a0909;
+}
+
+
+.start {
+    width: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 300px;
+    left: 50%;
+    font-family: 'Fondamento', cursive;
+    color: white;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.start h1 {
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+.start img {
+    align-self: center;
+    margin-top: 100px;
+}
+
+.start_button {
+    margin-top: 50px;
+    align-self: center;
+    font-size: 70px;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    border: 4px white double;
+    border-radius: 25px;
+    width: 50px;
+    height: 25px;
+    font-family: 'Fondamento', cursive;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+
+a {
+    align-self: center;
+}
+
+.start_button:hover {
+    border-color: silver;
+    color: silver;
+}
+
+.start_button:hover > p {
+    color: silver;
+}
+
+/* ============================== PAGE 1 */
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.party_text_1 {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: normal;
+    opacity: 0;
+    z-index: 0;
+}
+
+.party_image_1 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    z-index: 2;
+}
+
+.party_image_1:hover {
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+a:hover + .party_text_1 {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/* ============================== PAGE 2 */
+
+.party_image_2 {
+    width: 100%;
+    animation-name: appear;
+    animation-duration: 3s;
+    z-index: 0;
+    position: relative;
+}
+
+.party_text_2 {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    position: absolute;
+    top: 70%;
+    right: 60%;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    line-height: normal;
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* ============================== PAGE 3 */
+
+.party_text_3a {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    line-height: normal;
+    opacity: 0;
+    z-index: 0;
+}
+
+.party_image_3a {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    z-index: 2;
+}
+
+.party_image_3a:hover {
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.party_image_3a:hover + .party_text_3a {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.party_text_3b {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: right;
+    font-size: 20px;
+    line-height: normal;
+    opacity: 0;
+    z-index: 0;
+}
+
+.party_image_3b {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    z-index: 2;
+}
+
+.party_image_3b:hover {
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+a:hover + .party_text_3b {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/* ============================== PAGE 4 */
+.party_dark {
+    background-color: black;
+}
+
+.party_text_4 {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    line-height: normal;
+    opacity: 0;
+    z-index: 0;
+}
+
+.party_image_4 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    z-index: 2;
+}
+
+a {
+    color: slategray;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.party_image_4:hover {
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+a:hover + .party_text_4 {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+/* ============================== PAGE 5 */
+.party_text_5a {
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -300px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 35px;
+    line-height: normal;
+}
+
+.party_text_5b {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: normal;
+    opacity: 0;
+    z-index: 0;
+}
+
+.party_image_5b {
+    width: 200px;
+    height: 200px;
+    margin-left: -50px;
+    margin-top: -50px;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    z-index: 2;
+}
+
+.party_image_5b:hover {
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.party_image_5b:hover + .party_text_5b {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.party_text_5c {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: normal;
+    opacity: 0;
+    z-index: 0;
+}
+
+.party_image_5c {
+    width: 200px;
+    height: 200px;
+    margin-left: -50px;
+    margin-top: -50px;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    z-index: 2;
+}
+
+.party_image_5c:hover {
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.party_image_5c:hover + .party_text_5c {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.party_text_5d {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: normal;
+    opacity: 0;
+    z-index: 0;
+}
+
+.party_image_5d {
+    width: 200px;
+    height: 200px;
+    margin-left: -50px;
+    margin-top: -50px;
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    z-index: 2;
+}
+
+.party_image_5d:hover {
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.party_image_5d:hover + .party_text_5d {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.party_text_5e {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: normal;
+    opacity: 0;
+    z-index: 0;
+}
+
+.party_image_5e {
+    width: 200px;
+    height: 200px;
+    margin-left: -50px;
+    margin-top: -50px;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    z-index: 2;
+}
+
+.party_image_5e:hover {
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+a:hover + .party_text_5e {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+a:hover ~ .party_text_5f {
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.party_text_5f {
+    width: 700px;
+    height: 100px;
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    margin-left: -300px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: right;
+    font-size: 25px;
+    line-height: normal;
+    opacity: 0;
+    z-index: 0;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE BANDIT GIRL</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/angouleme/angouleme.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_angouleme.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+
+    </script>
+</head>
+
+<body class="angouleme_backstory_bg">
+    <!--Introductory Quote-->
+    <div class="story_3">
+        “They gave me away to be raised by distant relatives.
+        <br><br>
+        Admittedly, they didn’t have a cat, a dog, or any other fucker on their arms, but they weren’t bad to me. They sent me to school and generally didn’t beat me… 
+        <br><br>
+        Though they reminded me pretty often who I was. <br><br><span class="story_emph_2"> A bastard, conceived in the straw.”</span>
+    </div>
+    <div class="story_4">
+        “My mother visited me maybe three or four times when I was small. Then she stopped. And to be honest, I didn’t give a shit…”
+    </div>
+    <div class="story_5">
+        “The war broke out, you know, the one with Nilfgaard.
+        <br><br>
+        My relatives lost everything, had to abandon their house.
+        <br><br>
+        They had three children of their own, and I’d become a burden to them...
+    </div>
+    <div class="story_6">
+        so they gave me away to <span class="story_emph_2">an orphanage.”</span>
+    </div>
+    
+    <img src="../../../img/angouleme/sun.png" class="sun">
+
+    <!-- BACK BUTTON-->
+    <a href="angouleme_backstory_1.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="angouleme_backstory_3.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+    
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body>
+
+</html>

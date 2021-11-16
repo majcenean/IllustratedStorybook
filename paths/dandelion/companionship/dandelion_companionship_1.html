@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE POET</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/dandelion/dandelion.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_dandelion.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="dandelion_companion_bg">
+
+    <div class="companion_1">
+        “Are you one of those who had a hand in this?”
+        <br><br>
+        He turned around suddenly. The dryad leaning against a pine tree had hair the color of silver.
+    </div>
+    <div class="companion_2">
+        “A most deplorable sight,” she said, folding her arms across her chest.
+        <br><br>
+        “Someone who has lost everything. You know, minstrel, it is interesting. <br><br>Once, I thought it was impossible to lose everything, that something always remains. Always. Even in times of contempt… <br><br>But he… he lost several pints of blood, the ability to walk properly, the partial use of his left hand, his witcher’s sword, the woman he loves, the daughter he had gained by a miracle, his faith… <br><br>Well, I thought, he must have been left with something. But I was wrong. <br><br>He has nothing now. Not even a razor.”
+    </div>
+    <div class="companion_3">
+        Dandelion remained silent. The dryad did not move.
+    </div>
+    <div class="companion_4">
+        “I asked you if you had a hand in this,” she began a moment later.
+        <br><br>“But I think there was no need. It’s obvious you had a hand in it.
+        <br><br>
+        <span class="companion_emph">It’s obvious you are his friend.</span>
+        <br><br>And if someone has friends, and he loses everything in spite of that, it’s obvious the friends are to blame.
+        <br><br><br><br>For what they did,
+        <br><br>
+        <span class="companion_emph">or what they didn’t do.”</span>
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="../brokilon/dandelion_brokilon_4.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="dandelion_companionship_2.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE N̶I̶L̶F̶G̶A̶A̶R̶D̶I̶A̶N̶ VICOVARIAN</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/cahir/cahir.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_cahir.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="cahir_bg">
+    <!--Introductory Quote-->
+    <div class="cahir_nm_1">
+        Smoke. Fire. Frantic galloping, hooves thundering. Flames all around.
+    </div>
+
+    <div class="cahir_nm_2">
+        The rider stares down at her. Ciri sees his eyes gleaming through the slit in his huge helmet, framed by a bird of prey’s wings. She sees the fire reflected in the broad blade of the sword held in his lowered hand.
+    </div>
+
+    <div class="cahir_nm_3">
+        She is frozen in <span class="cahir_nm_emphasis">fear:</span> a terrible <span class="cahir_nm_emphasis">fear</span> which turns her entrails inside out, which deafens Ciri to the screams of the wounded horse, the roar of the blaze, the cries of dying people and the pounding drums. The only thing which exists, which counts, which still has any meaning, is <span class="cahir_nm_emphasis">fear</span>. <span class="cahir_nm_emphasis">Fear</span> embodied in the figure of a black knight wearing a helmet decorated with feathers frozen against the wall of raging, red flames.
+    </div>
+
+    <div class="cahir_nm_4">
+        The rider spurs his horse, the wings on his helmet fluttering as the bird of prey takes to flight, launching itself to attack its helpless victim, paralysed with fear. The bird – or maybe the knight – screeches terrifyingly, cruelly, triumphantly.
+        <br><br>
+        A black horse, black armour, a black flowing cloak, and behind this – flames. A sea of flames.
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="cahir_bg.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="cahir_injured.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+
+</body></html>

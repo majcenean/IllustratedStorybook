@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE VAMPIRE</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/regis/regis.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_regis_afterreveal.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+
+    </script>
+</head>
+
+<body class="regis_turn_bg">
+    <div class="regis_turn_4">
+        "And that is enough," Geralt said, lowering the sword. "More than enough. Now scram, Emiel Regis Whatever-It-Was. Get out of here."
+    </div>
+    <div class="regis_turn_5">
+        "Astonishing," Regis sneered. "You're permitting me to leave? Me, who represents a danger to people? A witcher ought to make use of every opportunity to eliminate dangers of this kind."
+    </div>
+    <div class="regis_turn_6">
+        "Get lost. Make yourself scarce and do it fast."
+    </div>
+    <div class="regis_turn_7">
+        (...)
+    </div>
+    <div class="regis_turn_8">
+        "I understand and thank you," the vampire said, smiling. This time he bared his teeth. At the sight, Milva and Cahir stepped back and Dandelion stifled a cry of horror.
+        <br>
+        <br>
+        Emiel Regis Rohellec Terzieff-Godefroy shook his cape, wrapped himself up in it with a flourish and vanished. 
+        <span class="regis_turn_emphasis_vanish">
+            <a href="../resolution/regis_resolution_1.html">
+                He simply vanished.
+            </a>
+        </span>
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="regis_turn_1.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body>
+
+</html>

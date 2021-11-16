@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HOW TO PLAY</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_default.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="about_bg">
+    <div class="how_to_1">
+        Use the BACK and NEXT buttons to navigate pages within a character's path.
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+        </div>
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+        </div>
+        
+        <img src="../img/how_to/arrow.png" alt="arrow pointing" class="direction_arrow_1">
+        <img src="../img/how_to/arrow.png" alt="arrow pointing" class="direction_arrow_2">
+    </div>
+    <div class="how_to_2">
+        There is a home button in the upper-right hand corner of every page to escape the current storyline and return to the character select menu.
+        <img src="../img/how_to/arrow.png" alt="arrow pointing" class="direction_arrow_3">
+    </div>
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    <div class="how_to_3">
+        Sometimes, if you HOVER over images 
+        <div class="ex_img">
+        <img src="../img/how_to/geralt_sprite_1.png" alt="hes ok" class="ex_img_1">
+        <img src="../img/how_to/geralt_sprite_2.png" alt="hes ANGERY" class="ex_img_2">
+        </div>
+        and 
+        <span class="colored_text">
+            <a href="purpose.html">colored text,</a>
+        </span>
+        they may change visually for narrative purposes, or lead you to another page.
+    </div>
+
+</body></html>

@@ -1,0 +1,1362 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: 25px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================ NAV BUTTONS ================ */
+
+.button_index {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: silver;
+    text-shadow: 0px 0px 5px darkgray;
+    border: 2px solid silver;
+    box-shadow: 0px 0px 5px darkgray;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 33px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    vertical-align: bottom;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: left;
+    transition: 0.5s;
+}
+
+.button_index h2 {
+    color: silver;
+    text-shadow: 0px 0px 5px darkgray;
+    font-size: 70px;
+    padding-top: 3px;
+    padding-left: 3.5px;
+}
+
+.button_index h3 {
+    color: silver;
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.button_index:hover {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px lightgray;
+    width: 150px;
+    justify-content: left;
+}
+
+.button_index:hover h2 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+.button_index:hover h3 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+.button_back {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    color: silver;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    margin: 100px;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-name: fadeInUp_button;
+    transition: box-shadow 1s;
+}
+
+.button_back:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+
+.button_next {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    color: silver;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    margin: 100px;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-name: fadeInUp_button;
+    transition: box-shadow 1s;
+}
+
+.button_next:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes fadeInUp_button {
+    from {
+        transform: translate3d(0, 50px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 0.7
+    }
+}
+
+
+/* ================ INTRO QUOTES ================ */
+.intro_quote {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 500px;
+    margin: 200px;
+}
+
+.intro_emphasis {
+    font-style: italic;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 50px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+
+.dandelion_bg {
+    background-color: goldenrod;
+}
+
+.dandelion_intro_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: 90px;
+    font-size: 30px;
+    margin: 100px 100px 0px 100px;
+    width: 800px;
+
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.dandelion_intro_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: 90px;
+    font-size: 50px;
+    margin: 0px 100px 100px 100px;
+    width: 800px;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.bg_img_1 {
+    width: 800px;
+    height: 800px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -5;
+    opacity: 0.6;
+}
+
+
+
+/* ================ APPEARANCE/BACKGROUND ================ */
+
+.dandelion_bg_bg {
+    background-color: beige;
+}
+
+.dandelion_bg_1 {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.dandelion_bg_2 {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 400px;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.dandelion_bg_3 {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    left: 20%;
+    top: 35%;
+    width: 400px;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.dandelion_bg_4 {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    right: 35%;
+    width: 400px;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.dandelion_bg_5 {
+    font-family: 'Francois One', sans-serif;
+    color: black;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    right: 70%;
+    top: -100%;
+    width: 400px;
+    animation-delay: 2s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.dandelion_bg_emphasis_1 {
+    font-style: italic;
+    color: plum;
+}
+
+.dandelion_bg_emphasis_2 {
+    font-style: italic;
+    color: #8c1515;
+}
+
+.dandelion_bg_emphasis_3 {
+    font-style: italic;
+    color: darkgoldenrod;
+}
+
+.dandelion_bg_emphasis_4 {
+    font-style: italic;
+    color: #661f80;
+}
+
+.dandelion_bg_emphasis_5 {
+    font-style: italic;
+    color: darkolivegreen;
+}
+
+.bg_img {
+    width: 400px;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: -200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -5;
+    opacity: 1;
+}
+
+
+/* ================ LUTE > LIFE! [MUSICIAN] ================ */
+
+.lute_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    width: 800px;
+    animation: fadeInUp 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.lute_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    width: 500px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.lute_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    bottom: 20%;
+    left: 52%;
+    width: 500px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.lute_emph {
+    color: lavender;
+    font-style: italic;
+}
+
+.lute_img {
+    width: 400px;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+    right: 60%;
+    bottom: 55%;
+    z-index: -5;
+    opacity: 1;
+}
+
+/* ============= it could potentially be a motley crew reference but maybe a medieval cover of it [GIRLS GIRLS GIRLS] ================ */
+.dandelion_girls_bg {
+    background-color: #8e4585;
+}
+
+.girls_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 300px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.girls_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 500px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.girls_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    width: 400px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.girls_emph {
+    font-size: 60px;
+    margin-left: 200px;
+    font-style: italic;
+    color: gold;
+}
+
+.girls_img {
+    width: 300px;
+    height: 300px;
+    background-image: url(../../img/dandelion/flowerpot_sprite.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+    right: 10%;
+    top: -10%;
+    z-index: -5;
+    animation-name: flowerpot;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes flowerpot {
+    0% {
+        transform: translate(0, -20%);
+        background-position: 0px 0px;
+    }
+
+    99% {
+        background-position: 0px 0px;
+    }
+
+    99.5% {
+        background-position: 0px -300px;
+    }
+
+    100% {
+        transform: translate(0, 250%);
+        background-position: 0px -300px;
+    }
+}
+
+/* ============= because he reacts realistically to these crazy situations [COWARD] ================ */
+
+.dandelion_coward_bg {
+    background-color: darkolivegreen;
+}
+
+.coward_1 {
+    font-family: 'Francois One', sans-serif;
+    color: lightgoldenrodyellow;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 500px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.coward_2 {
+    font-family: 'Francois One', sans-serif;
+    color: lightgoldenrodyellow;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    width: 500px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.coward_3 {
+    font-family: 'Francois One', sans-serif;
+    color: lightgoldenrodyellow;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    width: 500px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.coward_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 900px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.coward_5 {
+    font-family: 'Francois One', sans-serif;
+    color: lightgoldenrodyellow;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    width: 500px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.coward_6 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    bottom: 20%;
+    left: 17%;
+    width: 900px;
+    animation: fadeInUp 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+/* ============= more than an idiot... uh, maybe  [LOYALTY ARC] ================ */
+
+
+.geralt_bg {
+    background-color: slategrey;
+}
+
+
+.geralt_injured_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    width: 600px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.geralt_injured_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    width: 400px;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.geralt_injured_3 {
+    font-family: 'Francois One', sans-serif;
+    color: darkgray;
+    text-align: left;
+    line-height: normal;
+    font-size: 50px;
+    width: 500px;
+    position: absolute;
+    bottom: 15%;
+    right: 25%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+    animation-delay: 3s;
+}
+
+
+.dandelion_brokilon_bg {
+    background-color: #172918;
+    background-image: url("../../img/backgrounds/brokilon_bg.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1600px) {
+    .dandelion_brokilon_bg {
+        background-size: 125%;
+    }
+}
+
+.brokilon_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 300px;
+    animation: fadeInUp 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_2a {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 35px;
+    position: absolute;
+    bottom: 70%;
+    right: 15%;
+    width: 400px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_2b {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 63%;
+    right: 15%;
+    width: 350px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_2c {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 45px;
+    position: absolute;
+    bottom: 55%;
+    right: 15%;
+    width: 400px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 35%;
+    right: 9%;
+    width: 300px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    width: 300px;
+    animation: fadeInUp 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_5a {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    width: 700px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_5b {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    width: 600px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_5c {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 45px;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    width: 680px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_6 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 350px;
+    animation: fadeInUp 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_7 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 500px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_8 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    width: 500px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_9 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    width: 400px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_10 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    width: 300px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.brokilon_11 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    width: 400px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+/* ============= [LOYALTY ARC] ================ */
+
+.dandelion_companion_bg {
+    background-color: #1d253d;
+}
+
+.companion_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 500px;
+    animation: fadeInUp 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 450px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: right;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 450px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 30%;
+    right: 12%;
+    width: 550px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_emph {
+    font-size: 40px;
+    font-style: italic;
+}
+
+.companion_5a {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 32px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 700px;
+    animation: fadeInUp 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_5b {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: right;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 550px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_5c {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 550px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_5d {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: right;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    width: 550px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_5e {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 550px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_6 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    width: 550px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_7 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 450px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_8 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 450px;
+    animation: fadeInUp 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_9 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 15%;
+    left: 13%;
+    width: 450px;
+    animation: fadeInUp 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_10 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    width: 450px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_11 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 65%;
+    left: 13%;
+    width: 450px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_12 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    width: 300px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_13 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    font-style: italic;
+    line-height: normal;
+    font-size: 50px;
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    width: 550px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_14 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    width: 450px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 7s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.companion_15 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    bottom: 12%;
+    right: 15%;
+    width: 450px;
+    animation: fadeInUp 1.5s;
+    animation-delay: 7s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+/* =============END PAGE================ */
+
+.end {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 60px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.restart_button {
+    width: 400px;
+    height: 50px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -25px;
+    padding: 10px;
+    border: 5px white double;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.restart_button:hover {
+    border: 5px silver double;
+    color: silver;
+}
+
+.index_button {
+    width: 400px;
+    height: 50px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -25px;
+    padding: 10px;
+    border: 5px white double;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.index_button:hover {
+    border: 5px silver double;
+    color: silver;
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HOW TO PLAY</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_default.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="about_bg">
+
+    <div class="purpose_1">
+        The PURPOSE of this project is to resemble the book form in a more creative manner, giving you a full background of each character in Geralt's company through experiencing their respective paths.
+        <br><br>
+        TAKE YOUR TIME and ENJOY!
+        As The Witcher is a series of fantasy novels, this project is also meant to be read for pleasure. Do not rush, do not force yourself to read every single word. Take it as you would a book.
+    </div>
+
+    <div class="cw_1">
+        CONTENT WARNINGS:
+        Please note that The Witcher is an adult fantasy series and this project contains content surrounding backstories and stories involving sensitive topics and heavy language.
+        <br><br>
+        SENSITIVE TOPICS INCLUDE:<br>
+        <span style="font-size: 20px">[<span style="text-shadow: 0px 0px 15px black">HOLD CLICK</span> for specific content warnings, <span style="text-shadow: 0px 0px 15px black">SPOILERS INCLUDED.</span>]</span>
+        <br>
+        <span class="cws">
+            <ul>
+                <li>Mentions of Violence, War, Fantasy Violence, and Blood</li>
+                <li>Mentions of Abortion, Miscarriage, and Child Loss</li>
+                <li>Mentions of Child Abuse and Abandonment</li>
+                <li>Mentions of Rape/CSA</li>
+            </ul>
+        </span>
+        <br>
+        This project is not, in its creator's opinion, suitable for a younger audience or for those that are triggered by the aforementioned sensitive topics.
+    </div>
+
+    <a href="../index.html">
+    <div class="button_next_purpose">
+        RETURN TO SELECT
+        <br>&#8618;
+    </div>
+        </a>
+
+</body></html>

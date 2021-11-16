@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE POET</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/dandelion/dandelion.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_dandelion.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="dandelion_companion_bg">
+
+    <div class="companion_8">
+        “Geralt… Listen to me —”
+    </div>
+    <div class="companion_9">
+        “Listen to what?” shouted the Witcher, before <i>his voice suddenly faltered.</i>
+        <br><br>
+        “I can’t leave — I can’t just leave her to her fate. She’s completely alone… She cannot be left alone, Dandelion.
+        <br><br>
+        You’ll never understand that. No one will ever understand that, but I know. If she remains alone, the same thing will happen to her as once happened to me. <i>You’ll never understand that…</i>”
+    </div>
+    <div class="companion_10">
+        “I do understand. Which is why I’m coming with you.”
+    </div>
+    <div class="companion_11">
+        “You’re insane. Do you know where I’m headed?”
+    </div>
+    <div class="companion_12">
+        “Yes, I do. Geralt, I — I haven’t told you everything. I’m… I feel guilty.
+        <br><br>I didn’t do anything; I didn’t know what to do. But now I know.
+    </div>
+     <div class="companion_13">
+         I want to go with you.<br>I want to be by your side.”
+    </div>
+    <div class="companion_14">
+        The witcher stood thinking for a long time.
+    </div>
+    <div class="companion_15">
+        “Get on your horse,” he said, his voice sounding different. “You can tell me on the way.”
+    </div>
+
+
+
+    <!-- BACK BUTTON-->
+    <a href="dandelion_companionship_2.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="dandelion_end.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

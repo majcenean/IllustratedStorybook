@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE WIEDŹMIN</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/geralt/geralt.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_geralt.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="regis_advice_bg">
+
+    <div class="regis_advice_1">
+        <div style="font-size: 15px">
+            "More than that, the nature of the goal demands that you accomplish it alone, in person.
+        </div>
+        <br>
+        The risks, dangers, hardships and constant struggle with doubt must only burden you.
+        <br><br>
+        <div class="regis_advice_1a">
+            For, after all, they are components of the penance, the expiation of guilt you want to earn.
+        </div>
+        <br><br><br>
+        <div style="font-size: 15px">
+            A baptism of fire, I'd say. You'll pass through fire, which burns, but also purges.
+        </div>
+        <br>
+        <div class="regis_advice_1a">
+            <span style="font-size: 50px">
+                And you'll do it alone.
+            </span>
+            <br><br>
+            For were someone else to <i>support you</i> in this, help you, take on even a scrap of that baptism of fire, that pain, that penance, they would, by the same token, <i>impoverish</i> you.
+        </div>
+        <br><br><br><br><br><br><br>
+        <div style="font-size: 15px">
+            They would deprive you of the expiation you you desire, which would be owed to them for their involvement.
+        </div>
+        <br>
+        After all, it should be your exclusive expiation. Only you have a debt to pay off, and you don't want to run up debts with other creditors at the same time.
+        <br><br>
+        Is my logic correct?"
+    </div>
+    <div class="regis_advice_2">
+        <div style="margin-left: 150px">
+        <span style="font-size: 15px">
+            <div style="text-align: right">
+                "Surprisingly so. Leave me alone with my expiation, please. And my debt."
+            </div>
+            <br>
+            "As you wish," Regis said, arising.
+        </span>
+            </div>
+        <br><br>
+        "But I will give you some advice anyway.
+        <br><br>
+        <span style="font-size: 20px">
+            A sense of guilt, as well as the need for expiation, for a cleansing baptism of fire, aren't things you can claim an exclusive right to.
+            <br><br>
+            Life differs from banking, because it has debts which are paid off by running up debts with others."
+        </span>
+        <br><br><br><br>
+        <div style="font-size: 15px">
+            <div style="text-align: right">
+                "Go away, please."
+            </div>
+        </div>
+        "As you wish."
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="../daughter/geralt_aftermath.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="../journey/geralt_journey_dandelion.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+
+    <!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+
+</body></html>

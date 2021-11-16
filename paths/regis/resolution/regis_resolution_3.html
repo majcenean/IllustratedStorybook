@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE VAMPIRE</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/regis/regis.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_regis_afterreveal.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="regis_resolution_bg">
+    <div class="sober_1">
+        "In the grave, I had enough time to reflect on things..."
+        <br><br>
+        "Enough?" Geralt asked. "How much?"
+        <br><br>
+        Regis looked at him.
+    </div>
+    <div class="sober_2">
+        "Professional curiosity? Approximately fifty years. When I had regenerated, I decided to get myself together. It was not easy, but I managed to.
+        <br><br>
+        <span class="sober_emphasis">
+        Since then, I do not drink."
+        </span>
+    </div>
+
+    <!-- BACK BUTTON-->
+    <a href="../party/regis_party_5.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+    
+    <!-- NEXT BUTTON-->
+    <a href="../humanity/regis_humanity_1.html">
+    <div class="button_next">
+        NEXT
+        <br>&#8618;
+    <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+    </div>
+    </a>
+    
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

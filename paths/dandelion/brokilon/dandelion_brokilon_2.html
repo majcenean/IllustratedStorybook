@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE POET</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/dandelion/dandelion.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_dandelion.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="dandelion_brokilon_bg">
+
+    <div class="brokilon_4">
+        The bard adjusted his hat to a jaunty angle over his left ear, prodded his horse with his heels and headed into the ravine, whistling a well-known and extremely indecent cavalry song.
+        <br><br>
+        Dandelion quickened his pace in order to get away as quickly as possible. He didn’t want to sabotage the reputation he’d just earned himself.
+        <br><br>
+        And he knew, with his mouth drying up in terror, that he wouldn’t be able to whistle for much longer.
+
+    </div>
+    <div class="brokilon_5a">
+        In his mind’s eye, he could already see bows bending, bowstrings being pulled back and sharp arrowheads being aimed at him.
+    </div>
+    <div class="brokilon_5b">
+        He recalled watching shooting tournaments, competitions and archery displays as country markets. Straw targets and mannequins, studded or torn apart by arrowheads.
+    </div>
+    <div class="brokilon_5c">
+        What does a man feel when he’s hit by an arrow? The impact? Pain? Or perhaps... nothing?
+
+    </div>
+    <div class="brokilon_6">
+
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="dandelion_brokilon_1.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="dandelion_brokilon_3.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

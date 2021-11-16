@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE VAMPIRE</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/regis/regis_party.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_regis_afterreveal.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+      var msg  = document.title;
+      var speed = 150;
+      var endChar = " . . . ";
+      var pos = 15;
+      
+      function moveTitle()
+      {
+       	var ml = msg.length;
+      		
+      	title = msg.substr(pos,ml) + endChar + msg.substr(0,pos);
+    	document.title = title;
+      	
+        pos++;
+    	if (pos > ml) pos=0;
+        window.setTimeout("moveTitle()",speed);
+      }
+  
+      moveTitle();
+  </script>
+</head>
+<body class="party_start">
+
+    <!-- MUSIC:
+TITLE: NES Po-pi-po
+POSTED ON: Dec 11, 2009
+UPLOADED BY: anonymarchive
+LINK: https://www.youtube.com/watch?v=V1ZqaMOpg7I
+DATE ACCESSED: 10/12/2019
+-->
+    <iframe src="../../../music/Miku_8Bit.mp3" allow="autoplay" "loop" id="audio" style="display:none">
+    </iframe>
+    
+    <div class="start">
+    <h1>Start the party!</h1>
+        <a href="regis_party_1.html">
+        <div class="start_button">
+        <p>&#8605;</p>
+            </div></a>
+        <img src="../../../img/regis/bat.gif" alt="bat" width="100px">
+    </div>
+    
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE POET</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/dandelion/dandelion.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_dandelion.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="dandelion_girls_bg">
+
+    <div class="girls_1">
+        "You pig! You plague-stricken warbler! You trickster!"
+        <br><br>
+        A young, fair-haired woman in a nightdress was standing on a tiny balcony of a cottage (...) she hurled down a chipped flowerpot.
+        <br><br>
+        A slim man in a plum bonnet with a white feather jumped aside, and the flowerpot crashed onto the ground just in front of him, shattering to pieces.
+        <br><br>
+        "Please, Vespula!" The man in the bonnet shouted. "Don't lend credence to the gossip! I was faithful to you, may I perish if it is not true!"
+    </div>
+    <div class="girls_2">
+        "Hey Dandelion," called the Witcher, "How are you? What's going on?"
+        <br><br><br>
+        "Nothing special," said the troubadour, grinning.
+        <br><br>
+        <span class="girls_emph">"The usual."</span>
+        <br><br>
+        "Greetings, Geralt. What are you doing here? Bloody hell, look out!"
+        <br><br>
+    </div>
+    <div class="girls_3">
+        A tin cup whistled through the air and bounced off the cobbles with a clang.
+    </div>
+    
+    <div class="girls_img"></div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="dandelion_musician.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="dandelion_coward.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

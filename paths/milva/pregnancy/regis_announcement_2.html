@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE BARBER_SURGEON</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/milva/milva.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_regis_beforereveal.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="regis_bg">
+    <div class="announcement_6">
+        “It’s a bigger problem than you think,” the surgeon said. “Or a lesser one. It all depends on one’s point of view.”
+        <br><br>
+        “I don’t understand.”
+    </div>
+    <div class="announcement_7">
+        “She demanded,” Regis began a short while later, “that I prepare and give her a strong and powerful… medicament. <br><br>
+        She considers it a remedy for the problem. Her mind is made up. I’ve already prepared the agent,” Regis said, showing them all a small bottle of dark glass.
+        <br><br>
+        “Should she ask again, I shall not refuse.
+        <br><br>
+        Should she ask again,” he repeated with force.
+    </div>
+    <div class="announcement_8">
+        “What’s this all about then?
+        <br>
+        <span class="announcement_emph">
+            Unanimity? Total agreement?
+        </span>
+        <br>
+        Is that what you’re expecting?”
+    </div>
+    <div class="announcement_9">
+        “You know very well what it’s about,” the surgeon answered. “You know perfectly well what ought to be done. <br><br>
+        But since you ask, I shall tell you. <br><br>
+        Yes, Geralt, that’s precisely what it’s about. Yes, that’s precisely what ought to be done.
+        <br><br>
+        <div class="announcement_emph">
+            And no, it’s not me that’s expecting it.”
+        </div>
+    </div>
+    
+    <img src="../../../img/milva/bottle.png" class="bottle">
+
+    <!-- BACK BUTTON-->
+    <a href="regis_announcement_1.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="geralt_talk.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+
+</body></html>

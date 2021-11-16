@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE WIEDŹMIN</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/geralt/geralt.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_geralt.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="daughter_bg">
+
+    <div class="aftermath_1">
+        “I am only interested in one thing: to get at the skins of those who have hurt Ciri.
+        <br><br>
+        I vowed to myself that those who have hurt her will pay for it with their blood.”
+    </div>
+    <div class="aftermath_2">
+        <span style="font-size: 35px">
+        “I don’t have a company,” the Witcher snapped.
+        </span>
+        <br><br>
+        “I don’t have one, and I don’t want to have one. I don’t need one. Do you get it?”
+        <br><br><br><br>
+        “Of course he gets it,” Milva said from behind him.
+        <br><br>
+        “And I get it too. You don’t need anyone, Witcher. You show it often enough.”
+    </div>
+    <div class="aftermath_3">
+        “I’m not fighting a private war,” he said, turning around suddenly.
+        <br><br>
+        <span style="font-size: 25px">
+        “I don’t need a company of daredevils, because I’m not going to save the world or to bring down an evil empire.
+            </span>
+        <br><br>
+        I’m going to get Ciri.<br>And that’s why I can go alone.”
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="geralt_coup_2.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="../journey/geralt_journey_regis_advice.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+
+    <!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+
+</body></html>

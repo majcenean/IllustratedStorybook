@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE N̶I̶L̶F̶G̶A̶A̶R̶D̶I̶A̶N̶ VICOVARIAN</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/cahir/cahir.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_cahir.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="cintra_bg">
+    <img src="../../../img/cahir/fire.png" alt="fire" class="fire">
+    <div class="cintra_4">
+        "It began with a chase through the city quarters, which were already burning.<br><br>That was a real hell. Nothing but the hiss of the flames and fire walls."
+    </div>
+    
+    <img src="../../../img/cahir/ciri_cintra.png" alt="ciri frightened" class="ciri">
+    <div class="cintra_5">
+        "One of my men picked Ciri up and pulled her onto his horse, but he did not get far, because one of the Cintrians stabbed him in the back, all the way through his body. I saw the sword protrude an inch from Ciri's head, and she fell again to the ground. She almost fainted from fear."
+    </div>
+    
+    <div class="cintra_6">
+        "She did not even know that she clung to an enemy. To a <a href="cahir_cintra_3.html">hated Nilfgaardian.</a>"
+    </div>
+    
+
+    <!-- BACK BUTTON-->
+    <a href="cahir_cintra_1.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

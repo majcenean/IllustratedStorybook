@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE BARBER_SURGEON</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/milva/milva.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_regis_beforereveal.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="regis_bg">
+    <div class="announcement_1">
+        “I’m addressing all of you,” Regis said. “We are, after all, a fellowship and bear collective responsibility. The fact that the one who bears ultimate responsibility… direct responsibility, so to speak… is not with us doesn’t change anything.”
+        <br><br>
+        “Spit it out,” Dandelion said, irritated. “Fellowship, responsibility… What’s the matter with Milva? What’s she suffering from?”
+        <br><br>
+        “She’s not suffering from anything,” Cahir said softly.
+    </div>
+    <div class="announcement_2">
+        “At least not strictly speaking,” Regis added.
+        <br><br>
+        “Milva’s pregnant.”
+    </div>
+    <div class="announcement_3">
+        Cahir nodded to show it was as he suspected. Dandelion, however, was dumbstruck. Geralt bit his lip.
+        <br><br>
+        “How far gone is she?”
+        <br><br>
+        “She declined, quite rudely, to give any dates at all, including the date of her last period. But I’m something of an expert. The tenth week.”
+        <br><br>
+        “She’s with us now. We have suddenly been promoted to the role of husbands and fathers. So let’s listen carefully to what the physician says.”
+    </div>
+    <div class="announcement_4">
+        “Wholesome, regular meals,” Regis began to list. “No stress. Sufficient sleep. And soon the end of horseback riding.”
+        <br><br>
+        They were all quiet for a long time.
+    </div>
+    <div class="announcement_5">
+        “We hear you, Regis,” Dandelion finally said.<br><br> “My fellow husbands and fathers, we have a problem.”
+    </div>
+
+    <!-- BACK BUTTON-->
+    <a href="../intro/milva_strength.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="regis_announcement_2.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+
+</body></html>

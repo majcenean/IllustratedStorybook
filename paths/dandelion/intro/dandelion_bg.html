@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE POET</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/dandelion/dandelion.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_dandelion.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+      var msg  = document.title;
+      var speed = 150;
+      var endChar = " . . . ";
+      var pos = 15;
+      
+      function moveTitle()
+      {
+       	var ml = msg.length;
+      		
+      	title = msg.substr(pos,ml) + endChar + msg.substr(0,pos);
+    	document.title = title;
+      	
+        pos++;
+    	if (pos > ml) pos=0;
+        window.setTimeout("moveTitle()",speed);
+      }
+  
+      moveTitle();
+    </script>
+</head>
+<body class="dandelion_bg_bg">
+    
+<!--Introductory Quote-->
+    <div class="intro_quote">
+        <div class="dandelion_bg_1">
+            A peal of laughter and the strumming of a lute resounded in the corridor and there, on the threshold of the library, stood Dandelion in a <span class="dandelion_bg_emphasis_1">lilac jerkin</span> with lace cuffs, his hat askew. <br><br>
+            The troubadour bowed exaggeratedly, the heron feather pinned to his hat sweeping the floor.
+        </div>
+        <div class="dandelion_bg_2">
+            As for Dandelion the dandy, he had already been mistaken a few times for an elf or half-elf, especially since he had <i>started wearing his hair to his shoulders and occasionally used curling irons.</i>
+        <div class="dandelion_bg_5">
+            The witcher stretched out comfortably on the straw. Dandelion, evidently afraid of getting his <span class="dandelion_bg_emphasis_5">elegant green jerkin</span> dirty, sat on the plank.
+        </div>
+        </div>
+        <div class="dandelion_bg_3">
+            An elegant fancy hat with the feather of an egret stuck into it, with his blonde hair coiffured by irons. Wearing a doublet, the colour of <span class="dandelion_bg_emphasis_2">red wine,</span> and a shirt with a lace frill. With his inseparable lute, and inseparable insolent smile on his lips.
+        </div>
+        <div class="dandelion_bg_4">
+            Next to him there was a thin man, half dozing, delicately strumming chords on a lute. An eccentric <span class="dandelion_bg_emphasis_4">plum coloured hat</span> decorated with a silver buckle and a long egret feather drooped over his eyes. Geralt recognized the hat and the feather so famous and known in all the manors, castles, guesthouses, inns and brothels. <br><span class="dandelion_bg_emphasis_3">Especially in the brothels.</span>
+        </div>
+    </div>
+    
+    <div class="bg_img"><img src="../../../img/dandelion/feather.png" alt="heron feather" width="400px" height="400px"></div>
+
+
+<!-- BACK BUTTON-->
+    <a href="dandelion.html">
+    <div class="button_back">
+        BACK
+        <br>&#8617;
+    <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+    </div>
+    </a>
+    
+<!-- NEXT BUTTON-->
+    <a href="dandelion_musician.html">
+    <div class="button_next">
+        NEXT
+        <br>&#8618;
+    <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+    </div>
+    </a>
+    
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body>
+
+</html>

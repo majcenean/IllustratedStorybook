@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE VAMPIRE</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/regis/regis.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_regis_afterreveal.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+
+    </script>
+</head>
+
+<body class="regis_resolution_bg">
+    <div class="regis_res_1">
+        Geralt turned his head away. (...) He smelled the intense scent of herbs and swore furiously.
+    </div>
+    <div class="regis_res_2">
+       "You're trying my patience, Regis."
+    </div>
+    <div class="regis_res_3">
+        The vampire, <span class="regis_res_emphasis_appear">who had suddenly appeared out of thin air,</span> was unconcerned, and sat down alongside the furious witcher.
+    </div>
+    <div class="regis_res_4">
+        Regis heaved a sigh, showing no intention of moving away. <br><br>
+        "I was listening to your conversation with Dandelion and the archer," he said, not without a hint of mockery in his voice.<br><br>
+        "I admit you've got a real talent for winning people over. Though the entire world seems to be out to get you, you disregard <span class="regis_res_emphasis">the comrades and allies wanting to help you.</span>"
+    </div>
+    <div class="regis_res_5">
+        "The world's turned upside down. A vampire's teaching me how to deal with humans. Why am I still talking to you?"
+        <br><br>
+        "The world's turned upside down," the vampire admitted. "You are talking to me indeed. Perhaps you'd also like to listen to some advice?"
+        <br><br>
+        "No. No, I wouldn't. I don't need to."
+        <br><br>
+        "True, I'd forgotten. Advice is superfluous to you, allies are superfluous, you'll get by without any <a href="regis_resolution_2.html"><span class="regis_res_companions">travelling companions.</span></a>"
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="../turn/regis_turn_3.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body>
+
+</html>

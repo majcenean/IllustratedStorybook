@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE POET</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/dandelion/dandelion.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_dandelion.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="dandelion_brokilon_bg">
+
+    <div class="brokilon_6">
+        The poet sat down and rested the lute on his knee. He plucked the strings, once then twice, then a third time. He twisted the pegs, turned the lute and began to play. And a moment later, to sing.
+
+    </div>
+    <div class="brokilon_7">
+        He didn’t hear — but he felt — somebody’s presence.
+        <br><br>
+        “Don’t shoot...” he whispered, obediently not looking around. “I come in peace...”
+        <br><br>
+        “<i>Sh’aente.</i>” [”Keep playing.”]
+    </div>
+    <div class="brokilon_8">
+        He obeyed, although his fingers had turned cold and numb on the strings, and he had difficulty making any sound whatsoever emerge from his throat. (...) <br><br>But he was a professional, dammit.
+    </div>
+    <div class="brokilon_9">
+        “I...” he began. “I am... The comrade of the witcher Geralt... I know that Geralt is among you in Brokilon. I have come...”
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="dandelion_brokilon_2.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="dandelion_brokilon_4.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE VAMPIRE</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/regis/regis.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_regis_afterreveal.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="regis_resolution_bg">
+    <div class="regis_res_6">
+        "Very well," Regis said at last. "I see it is inevitable. It would appear I ought to have explained a few things to you long ago…"
+    </div>
+    <div class="regis_res_7">
+        "I ought to begin by saying," Regis said a moment later, "that all fears surrounding my vampire nature are groundless. I won't attack anybody, nor will I creep around at night trying to sink my teeth into somebody's neck.
+    </div>
+    <div class="regis_res_7a">
+        I do not touch blood. Not at all and never.
+    </div>
+    <div class="regis_res_7b">
+        I stopped drinking it when it became a problem for me. A serious problem, which I had difficulty solving."
+    </div>
+    <div class="regis_res_8">
+        The problem arose and acquired negative characteristics in true textbook style. Even during my youth I enjoyed... er... the pleasures of good company, in which respect I was no different to the majority of my peers.
+    </div>
+    <div class="regis_res_9">
+        With humans, however, there exists a system of rules and restrictions – parental authority, guardians, superiors, and elders – morals, ultimately.
+    </div>
+     <div class="regis_res_10">
+         We have nothing like that. Young vampires have complete freedom and <i>exploit it.</i> They create their own patterns of behavior. <a href="../party/regis_party_start.html"><span class="regis_res_stupid">Stupid ones,</span></a> you understand...
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="regis_resolution_1.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+    
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+
+</body></html>

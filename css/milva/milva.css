@@ -1,0 +1,1386 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: 25px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================ NAV BUTTONS ================ */
+
+.button_index {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: silver;
+    text-shadow: 0px 0px 5px darkgray;
+    border: 2px solid silver;
+    box-shadow: 0px 0px 5px darkgray;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 33px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    vertical-align: bottom;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: left;
+    transition: 0.5s;
+}
+
+.button_index h2 {
+    color: silver;
+    text-shadow: 0px 0px 5px darkgray;
+    font-size: 70px;
+    padding-top: 3px;
+    padding-left: 3.5px;
+}
+
+.button_index h3 {
+    color: silver;
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.button_index:hover {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px lightgray;
+    width: 150px;
+    justify-content: left;
+}
+
+.button_index:hover h2 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+.button_index:hover h3 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+.button_back {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    color: silver;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    margin: 100px;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-name: fadeInUp_button;
+    transition: box-shadow 1s;
+}
+
+.button_back:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow:inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+
+.button_next {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    color: silver;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    margin: 100px;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-name: fadeInUp_button;
+    transition: box-shadow 1s;
+}
+
+.button_next:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow:inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes fadeInUp_button {
+    from {
+        transform: translate3d(0, 50px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 0.7
+    }
+}
+
+
+/* ================ INTRO QUOTES ================ */
+.intro_quote {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 500px;
+    margin: 200px;
+}
+
+.intro_emphasis {
+    font-style: italic;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 50px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+/*MILVA*/
+.milva_bg {
+    background-color: #57281d;
+}
+
+.milva_intro_1 {
+    font-family: 'Francois One', sans-serif;
+    color: blanchedalmond;
+    text-align: left;
+    line-height: 40px;
+    font-size: 50px;
+    margin: 100px 100px 0px 100px;
+    width: 800px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.milva_intro_2 {
+    font-family: 'Francois One', sans-serif;
+    color: blanchedalmond;
+    text-align: left;
+    line-height: 90px;
+    font-size: 30px;
+    margin: 0px 100px 200px 100px;
+    width: 800px;
+    animation-delay: 2s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.milva_intro_emphasis {
+    font-style: italic;
+    color: darkkhaki;
+}
+
+.bg_img_1 {
+    width: 800px;
+    height: 800px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -5;
+    opacity: 0.6;
+}
+
+
+/* ================ APPEARANCE/BACKGROUND ================ */
+
+
+/*MILVA*/
+.milva_bg_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.milva_bg_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    width: 300px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 2s;
+}
+
+.milva_bg_emphasis_1 {
+    font-style: italic;
+    color: #a18b4c;
+}
+
+
+.milva_bg_emphasis_2 {
+    font-style: italic;
+    color: gainsboro;
+}
+
+
+.bow {
+    position: absolute;
+    top: 33%;
+    left: 20%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 2.5s;
+}
+
+.hair_braided {
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 0.5s;
+}
+
+/* ================ dynamite with a laser beam guaranteed to blow your mind ================ */
+/*apologies ever since i completed dandelion's css, ive been humming queen*/
+
+.strength_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 12%;
+    right: 25%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.strength_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    right: 12%;
+    width: 550px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 1s;
+}
+
+.strength_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 300px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 2s;
+}
+
+.strength_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3s;
+}
+
+.strength_5 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 73%;
+    left: 14%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3s;
+}
+
+.strength_6 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 44%;
+    left: 14%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3s;
+}
+
+.strength_7 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    bottom: 35%;
+    right: 12%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3s;
+}
+
+.strength_8 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 4s;
+}
+
+.strength_emph {
+    font-size: 25px;
+}
+
+.arrow_strength {
+    position: absolute;
+    top: 33%;
+    left: 37%;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp_arrow;
+    animation-delay: 4.5s;
+}
+
+@keyframes fadeInUp_arrow {
+    from {
+        transform: translate3d(0, 150px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+/* ============= pregnancy ================ */
+.regis_bg {
+    background-color: darkolivegreen;
+}
+
+.announcement_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    width: 300px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.announcement_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    width: 500px;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.announcement_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    width: 400px;
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.announcement_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    width: 400px;
+    position: absolute;
+    top: 33%;
+    right: 25%;
+    animation-duration: 1.5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.announcement_5 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    width: 500px;
+    position: absolute;
+    top: 45%;
+    right: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.announcement_6 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    width: 490px;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.announcement_7 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    width: 300px;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.announcement_8 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    width: 500px;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.announcement_9 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    width: 300px;
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.bottle {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 400px;
+    height: 400px;
+    animation: wasp_jump 1s;
+    animation-iteration-count: infinite;
+}
+
+.announcement_emph {
+    font-size: 40px;
+    font-style: italic;
+    width: 400px;
+}
+
+.geralt_bg {
+    background-color: slategrey;
+}
+
+.talk_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    width: 600px;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: disappear;
+}
+
+.talk_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    width: 800px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    animation-duration: 1.5s;
+    animation-delay: 8s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+.pregnancy_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 35px;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.pregnancy_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 300px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 2s;
+}
+
+.pregnancy_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 300px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3s;
+}
+
+.pregnancy_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 30px;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 4.5s;
+}
+
+.crying {
+    position: absolute;
+    bottom: 25%;
+    right: 20%;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-delay: 5.5s;
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translate3d(0, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 50px, 0);
+        opacity: 1;
+    }
+}
+
+
+
+.pregnancy_5 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 600px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 0.5s;
+}
+
+.pregnancy_6 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 35px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 550px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 2s;
+}
+
+.pregnancy_7 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    bottom: 25%;
+    right: 30%;
+    width: 350px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    animation-name: appear;
+    animation-delay: 3s;
+}
+
+.caterpillar_1 {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    z-index: 1;
+    transition: 1s;
+}
+
+.caterpillar_1:hover {
+    opacity: 0;
+}
+
+.caterpillar_1:hover + .caterpillar_2 {
+    opacity: 1;
+}
+
+.caterpillar_2 {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.wasp {
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    transition: 0.5s;
+    animation: wasp_jump 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wasp_jump {
+    0% {
+        transform: rotate(1deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+.pregnancy_8 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.pregnancy_9 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 55px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 0.5s;
+}
+
+.pregnancy_10a {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    left: 21%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3s;
+}
+
+.pregnancy_10b {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 38%;
+    left: 24%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3s;
+}
+
+.pregnancy_11 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: right;
+    line-height: normal;
+    font-size: 28px;
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    width: 600px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 4s;
+}
+
+.hen {
+    position: absolute;
+    top: 30%;
+    right: 18%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3.5s;
+}
+
+.kite {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3.5s;
+}
+
+.pregnancy_12 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 600px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.pregnancy_13 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.pregnancy_14 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 1s;
+}
+
+.pregnancy_15 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 45px;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3s;
+}
+
+.scales {
+    position: absolute;
+    bottom: 35%;
+    left: 25%;
+    width: 400px;
+    height: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3.1s;
+}
+
+.shooting {
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+    width: 300px;
+    height: 300px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 2s;
+}
+
+.decision_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.decision_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 380px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 1s;
+}
+
+.decision_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 40px;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 4s;
+}
+
+.decision_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 45%;
+    right: 15%;
+    width: 350px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 5s;
+}
+
+/* ============= miscarriage and grief ================ */
+
+.milva_miscarriage_bg {
+    background-color: #353d37;
+}
+
+
+.miscarriage_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 22px;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    width: 380px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.miscarriage_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 15%;
+    right: 30%;
+    width: 300px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 1s;
+}
+
+.miscarriage_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 1s;
+}
+
+.miscarriage_4 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    right: 18%;
+    width: 500px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 3s;
+}
+
+.miscarriage_5 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    width: 210px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+}
+
+.miscarriage_6 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    width: 400px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 2s;
+}
+
+.miscarriage_7 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: left;
+    line-height: normal;
+    font-size: 15px;
+    position: absolute;
+    top: 45%;
+    right: 18%;
+    width: 210px;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-delay: 4s;
+}
+
+.braid_cut {
+    position: absolute;
+    top: 40%;
+    right: 25%;
+    transform: rotate(20deg);
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: fadeInDown;
+    animation-delay: 2s;
+}
+
+
+.end {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 60px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 1000px;
+    margin-left: -500px;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.restart_button {
+    width: 400px;
+    height: 50px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -25px;
+    padding: 10px;
+    border: 5px white double;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.restart_button:hover {
+    border: 5px silver double;
+    color: silver;
+}
+
+.index_button {
+    width: 400px;
+    height: 50px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -25px;
+    padding: 10px;
+    border: 5px white double;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    opacity: 0;
+    animation-name: appear;
+}
+
+.index_button:hover {
+    border: 5px silver double;
+    color: silver;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

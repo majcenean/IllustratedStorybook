@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE ARCHER</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/milva/milva.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_milva.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+
+    </script>
+</head>
+
+<body class="milva_miscarriage_bg">
+
+    <div class="miscarriage_5">
+        “The archer swiftly regained her physical fitness, which could not be said for her mental state.
+        <br><br>
+        It often happened that she would not utter a word throughout the whole day, from dawn to dusk. She would disappear and remain isolated, which worried everyone somewhat.
+        <br><br>
+        Until finally a crisis occured.
+    </div>
+    <div class="miscarriage_6">
+        Milva released the tension like a dryad or a she-elf: violently, impulsively, and not very comprehensively.
+        <br><br>
+        One morning, in front of our eyes, she drew a knife and without a word cut off her plait just above her shoulders. 
+    </div>
+     <div class="miscarriage_7">
+        “It doesn’t befit me, for I’m not a maiden,” she said, seeing our jaws hanging open.
+         <br><br>
+         “But nor am I a widow,” she added, “so that’s the end of my mourning.”
+         <br><br>
+         <br><br>
+         From that moment on she was her old self; brusque, biting, mouthy and inclined to use unparliamentary language.
+         <br><br>From which we happily concluded that she had come through the crisis.”
+    </div>
+    
+    <div class="braid_cut">
+    <img src="../../../img/milva/braid_cut.png" width="1000px">
+    </div>
+
+
+
+    <!-- BACK BUTTON-->
+    <a href="milva_miscarriage_1.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="milva_end.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body>
+
+</html>

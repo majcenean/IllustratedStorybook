@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SELECT YOUR PERSPECTIVE</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/favicons/favicon_default.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+
+    <script type="text/javascript" src="sound-mouseover.js"></script>
+</head>
+
+<body class="landing_page_bg">
+
+    <!-- MUSIC:
+TITLE: Priscilla's Song (Witcher 3) 8 bit style
+POSTED ON: Feb 1, 2017
+UPLOADED BY: Savatar
+LINK: https://www.youtube.com/watch?v=sHZbABfeM5k
+DATE ACCESSED: 10/8/2019
+-->
+    <iframe src="music/Priscilla_8Bit.mp3" allow="autoplay" "loop" id="audio" style="display:none">
+    </iframe>
+
+    <div class="title">
+        <h1>CHOOSE YOUR CHARACTER</h1>
+    </div>
+    <!-- For ease of access: HTML PUNCTUATION: https://www.toptal.com/designers/htmlarrows/punctuation/-->
+    <div class="select_character">
+
+        <a href="paths/geralt/intro/geralt.html">
+            <div class="character">
+                <h1 class="char_title">The Witcher</h1>
+                <img src="img/avatars/geralt_avatar.png" alt="geralt avatar" class="avatar_img" draggable="false">
+                <table>
+                    <tr>
+                        <th colspan="2" class="name">𝕲𝖊𝖗𝖆𝖑𝖙</th>
+                    </tr>
+                    <tr>
+                        <td class="stat">HP:</td>
+                        <td class="stat_value">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="stat">ATTK:</td>
+                        <td class="stat_value">30</td>
+                    </tr>
+                </table>
+
+                <div class="select">
+                    <div class="triangle"></div>
+                    <h2>SELECT</h2>
+                </div>
+
+            </div>
+        </a>
+
+        <a href="paths/dandelion/intro/dandelion.html">
+            <div class="character">
+                <h1 class="char_title">The Poet</h1>
+                <img src="img/avatars/dandelion_avatar.png" alt="dandelion avatar" class="avatar_img" draggable="false">
+                <table>
+                    <tr>
+                        <th colspan="2" class="name">𝕯𝖆𝖓𝖉𝖊𝖑𝖎𝖔𝖓</th>
+                    </tr>
+                    <tr>
+                        <td class="stat">HP:</td>
+                        <td class="stat_value"><img src="img/hp_half.png" width="10px" height="10px" display="inline" draggable="false"></td>
+                    </tr>
+                    <tr>
+                        <td class="stat">ATTK:</td>
+                        <td class="stat_value">0</td>
+                    </tr>
+                </table>
+
+                <div class="select">
+                    <div class="triangle"></div>
+                    <h2>SELECT</h2>
+                </div>
+            </div>
+        </a>
+
+        <a href="paths/milva/intro/milva.html">
+            <div class="character">
+                <h1 class="char_title">The Archeress</h1>
+                <img src="img/avatars/milva_avatar.png" alt="milva avatar" class="avatar_img" draggable="false">
+                <table>
+                    <tr>
+                        <th colspan="2" class="name">𝕸𝖎𝖑𝖛𝖆</th>
+                    </tr>
+                    <tr>
+                        <td class="stat">HP:</td>
+                        <td class="stat_value">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false"></td>
+                    </tr>
+                    <tr>
+                        <td class="stat">ATTK:</td>
+                        <td class="stat_value">10</td>
+                    </tr>
+                </table>
+
+                <div class="select">
+                    <div class="triangle"></div>
+                    <h2>SELECT</h2>
+                </div>
+            </div>
+        </a>
+
+        <a href="paths/regis/intro/regis.html">
+            <div class="regis_character">
+                <h1 class="char_title">The Surgeon</h1>
+                <img src="img/avatars/regis_avatar.png" alt="regis avatar" class="avatar_img" draggable="false">
+                <table>
+                    <tr>
+                        <th colspan="2" class="name">𝕽𝖊𝖌𝖎𝖘</th>
+                    </tr>
+                    <tr>
+                        <td class="stat">HP:</td>
+                        <td class="stat_value">
+                            <span class="glitch">
+
+                                <!--
+
+
+                                Ḭ̡͖͇͚̹ͭͩ͊͆ͣN̼͚̔̌ͭ̋̇C̖͎̜̗͈̹̎O͙̗̥̜̬̤͛̋͋M̂̉̔P̺̣̩̪̤̮̥̀͂̈́ͤͪ͋̿R̘̯̺̺̙̥͢E̶̯̫͇ͭ̒̐̓̄H̃̓ͬ̄͏̥̗̱̯̯̩͍E̡̥̠͔̋͑ͯͮŅ̙͈͔̹̪̘̽͆ͫͬ̂S̱͓͈͉̿ͣ̽̍I͙ͥ̓́ͅB̥͚͙̫̺̪͇ͮ̒͑̉̋̚L͙̓̀̉̅͗̎E̫͙̩̺̬ͥ̈ͣ̾̅
+
+
+                                    -->
+
+
+                                &#8669; Ę̺̺̈̾̄̽̉ͩRͥ͒́͏̩̝̻͕̗͙̟ͅR̴̨͍ͣ̆̊ͯ͆̇̚̚Ő̴̻̩͉̘̬̠̤͊̐͠R̞̳͛͗ͣͬ̄ͭ
+
+                            </span>
+                    </tr>
+                    <tr>
+                        <td class="stat">ATTK:</td>
+                        <td class="stat_value">9999999999999</td>
+                    </tr>
+                </table>
+                <div class="select">
+                    <div class="triangle"></div>
+                    <h2>SELECT</h2>
+                </div>
+            </div>
+        </a>
+
+        <a href="paths/cahir/intro/cahir.html">
+            <div class="character">
+                <h1 class="char_title">The Knight</h1>
+                <img src="img/avatars/cahir_avatar.png" alt="cahir avatar" class="avatar_img" draggable="false">
+                <table>
+                    <tr>
+                        <th colspan="2" class="name">𝕮𝖆𝖍𝖎𝖗</th>
+                    </tr>
+                    <tr>
+                        <td class="stat">HP:</td>
+                        <td class="stat_value">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false"></td>
+                    </tr>
+                    <tr>
+                        <td class="stat">ATTK:</td>
+                        <td class="stat_value">10</td>
+                    </tr>
+                </table>
+                <div class="select">
+                    <div class="triangle"></div>
+                    <h2>SELECT</h2>
+                </div>
+            </div>
+        </a>
+
+        <a href="paths/angouleme/intro/angouleme.html">
+            <div class="character">
+                <h1 class="char_title">The Bandit Girl</h1>
+                <img src="img/avatars/angouleme_avatar.png" alt="angouleme avatar" class="avatar_img" draggable="false">
+                <table>
+                    <tr>
+                        <th colspan="2" class="name">𝕬𝖓𝖌𝖔𝖚𝖑𝖊̂𝖒𝖊</th>
+                    </tr>
+                    <tr>
+                        <td class="stat">HP:</td>
+                        <td class="stat_value">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false">
+                            <img src="img/hp.png" width="10px" height="10px" display="inline" draggable="false"></td>
+                    </tr>
+                    <tr>
+                        <td class="stat">ATTK:</td>
+                        <td class="stat_value">10</td>
+                    </tr>
+                </table>
+                <div class="select">
+                    <div class="triangle"></div>
+                    <h2>SELECT</h2>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+    <a href="paths/about.html">
+    <div class="button_about">
+            <h2>&#8520;</h2>
+            <h3>Info</h3>
+        </div>
+    </a>
+    
+    <a href="paths/how_to.html">
+    <div class="button_howto">
+            <h2>&#9816;</h2>
+            <h3>How to Play</h3>
+        </div>
+    </a>
+
+</body></html>

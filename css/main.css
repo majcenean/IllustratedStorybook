@@ -1,0 +1,1059 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    text-align: justify;
+    line-height: 25px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================ landing page ================ */
+.landing_page_bg {
+    background-image: url("../img/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkseagreen;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    font-size: 15px;
+    margin: 100px;
+    text-align: justify;
+    animation: fadein 2.5s ease;
+
+    /* "can't touch this" */
+    /* CODE CITATION:
+    Title: How to disable text selection highlighting
+    Link: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting
+    Author: community wiki
+    Date Last Edited: 9/24/19
+    Date Accessed: 9/30/19 */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 50px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .landing_page_bg {
+        background-size: 125%;
+    }
+}
+
+
+.title {
+    font-family: 'Francois One', sans-serif;
+    text-transform: capitalize;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    text-align: justify;
+    line-height: 25px;
+    letter-spacing: 15px;
+    text-shadow: 2px 2px 5px black;
+    align-self: center;
+}
+
+.select_character {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 80px;
+    align-self: center;
+}
+
+.character {
+    max-width: 150px;
+    min-width: 150px;
+    height: 270px;
+    margin: 25px;
+    margin-bottom: 5px;
+    padding: 30px;
+    border: double white 4px;
+    background-color: rgba(33, 42, 18, 0.5);
+    border-radius: 25px;
+
+    transition: background 0.5s ease-in-out;
+    /*opacity change on hover*/
+    transition: all 0.5s ease-in-out;
+    /*scale change on hover*/
+
+    position: relative;
+}
+
+.regis_character {
+    max-width: 150px;
+    min-width: 150px;
+    height: 270px;
+    margin: 25px;
+    margin-bottom: 5px;
+    padding: 30px;
+    border: double white 4px;
+    background-color: rgba(33, 42, 18, 0.5);
+    border-radius: 25px;
+
+    transition: background 0.5s ease-in-out;
+    /*opacity change on hover*/
+    transition: all 0.5s ease-in-out;
+    /*scale change on hover*/
+
+    position: relative;
+}
+
+img {
+    opacity: 0.8;
+    transition: all .2s ease-in-out;
+}
+
+.avatar_img {
+    height: 150px;
+    width: 150px;
+    display: block;
+    border: 2px outset tan;
+    box-sizing: border-box;
+    transition: all .2s ease-in-out;
+}
+
+.character:hover .avatar_img {
+    border: 2px outset black;
+}
+
+.select {
+    position: absolute;
+    top: 103%;
+    left: 32.5%;
+    z-index: 100;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    transition: opacity 0.4s ease-in;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.select h2 {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 2px black;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+    align-self: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.character:hover .select {
+    opacity: 0.8;
+}
+
+.regis_character:hover .select {
+    opacity: 0.8;
+}
+
+
+/*Character Bio */
+a:hover .character {
+    transform: scale(1.07);
+    border: solid rgb(18, 18, 18) 4px;
+    /*CODE CITATION: [ADAPTED FROM]
+    TITLE: The Loading Shimmer!
+    AUTHOR: Dhilip Kumar
+    DATE PUBLISHED: 4/19/2019
+    DATE ACCESSED: 10/8/19
+    LINK: https://dev.to/dhilipkmr/the-loading-shimmer-29dc */
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(to right, rgba(217, 237, 213, 0.6) 4%, rgba(195, 224, 197, 0.6) 25%, rgba(217, 237, 213, 0.6) 36%);
+    background-size: 1000px 100%;
+}
+
+a:hover .regis_character {
+    transform: scale(1.07);
+    border: solid rgb(18, 18, 18) 4px;
+    /*CODE CITATION: [ADAPTED FROM]
+    TITLE: The Loading Shimmer!
+    AUTHOR: Dhilip Kumar
+    DATE PUBLISHED: 4/19/2019
+    DATE ACCESSED: 10/8/19
+    LINK: https://dev.to/dhilipkmr/the-loading-shimmer-29dc */
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(to right, rgba(217, 237, 213, 0.6) 4%, rgba(195, 224, 197, 0.6) 25%, rgba(217, 237, 213, 0.6) 36%);
+    background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/*ADJUSTMENT FOR MEDIA SIZES*/
+/*adjusting for the "SELECT" popup underneath each character card*/
+@media only screen and (max-width: 2000px) {
+    .character {
+        margin-bottom: 100px;
+    }
+}
+
+/*adjusting the select_character flexbox to only have a certain amount of character cards on each row*/
+@media only screen and (max-width: 1850px) {
+    .select_character {
+        width: 900px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .select_character {
+        width: 600px;
+    }
+
+    .title {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .select_character {
+        width: 400px;
+    }
+
+    .title {
+        width: 600px;
+    }
+}
+
+
+
+/*Character Bio Hover*/
+.character:hover img {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+.character:hover h1 {
+    color: rgb(18, 18, 18);
+    transition: all .2s ease-in-out;
+}
+
+.character:hover table {
+    color: rgb(18, 18, 18);
+    transition: all .2s ease-in-out;
+}
+
+.regis_character:hover img {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+.regis_character:hover h1 {
+    color: rgb(18, 18, 18);
+    transition: all .2s ease-in-out;
+}
+
+.regis_character:hover table {
+    color: rgb(18, 18, 18);
+    transition: all .2s ease-in-out;
+}
+
+
+/* Glitch Text */
+.glitch {
+    font-family: 'Francois One', sans-serif;
+    font-size: 13px;
+    transform: skew(20deg, 10deg);
+    vertical-align: middle;
+    text-shadow: 1px 1px 0px black;
+}
+
+@keyframes glitch {
+    0% {
+        opacity: 0;
+        transform: translate(-4px, 4px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-4px, 4px)
+    }
+}
+
+.regis_character:hover table td {
+    font-size: 1px;
+    animation-name: glitch;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    transition: 0.7s;
+    animation-name: color_glitch;
+    overflow: visible;
+}
+
+.regis_character:hover table td .glitch {
+    font-size: 25px;
+    text-align: left;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+@keyframes color_glitch {
+    0% {
+
+        color: white;
+    }
+
+    10% {
+
+        color: darkslateblue;
+    }
+
+    20% {
+
+        color: white;
+    }
+
+    30% {
+
+        color: darkred;
+        transform: translateX(20px);
+    }
+
+    40% {
+
+        color: white;
+        transform: translateX(-10px);
+    }
+
+    50% {
+
+        color: darkolivegreen;
+        transform: translateX(20px);
+        transform: skew(-20deg);
+    }
+
+    60% {
+
+        color: darkslateblue;
+        transform: skew(20deg);
+    }
+
+    70% {
+
+        color: darkseagreen;
+        transform: translateY(30px);
+    }
+
+    80% {
+
+        color: black;
+    }
+
+    90% {
+
+        color: darkred;
+    }
+
+    100% {
+
+        color: white;
+    }
+}
+
+
+
+.stat {
+    width: 70px;
+    font-size: 15px;
+    text-align: right;
+    vertical-align: baseline;
+    padding-right: 5px;
+}
+
+.stat_value {
+    width: 70px;
+    font-size: 12px;
+    text-align: left;
+    vertical-align: baseline;
+    overflow-x: hidden;
+}
+
+.name {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.char_title {
+    font-size: 25px;
+    align-self: center;
+    width: 160px;
+    margin-left: -5px;
+    text-align: center;
+}
+
+
+
+
+
+
+.button_about {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 1%;
+    top: 80%;
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px lightgray;
+    border: 2px solid whitesmoke;
+    box-shadow: 0px 0px 5px lightgray;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 33px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    vertical-align: bottom;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: left;
+    transition: 0.5s;
+}
+
+.button_about h2 {
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px white;
+    font-size: 60px;
+    padding-top: 8px;
+    padding-left: 15px;
+}
+
+.button_about h3 {
+    color: silver;
+    font-family: 'Francois One', sans-serif;
+    font-size: 26px;
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.button_about:hover {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px lightgray;
+    width: 125px;
+    justify-content: left;
+}
+
+.button_about:hover h2 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+.button_about:hover h3 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+.button_howto {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 1%;
+    top: 87%;
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px lightgray;
+    border: 2px solid whitesmoke;
+    box-shadow: 0px 0px 5px lightgray;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 33px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    vertical-align: bottom;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: left;
+    transition: 0.5s;
+}
+
+.button_howto h2 {
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px white;
+    font-size: 50px;
+    padding-top: 12.5px;
+    padding-left: -5px;
+}
+
+.button_howto h3 {
+    color: silver;
+    font-family: 'Francois One', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    padding-top: 0px;
+    padding-left: 8px;
+    width: 200px;
+    white-space: nowrap;
+}
+
+.button_howto:hover {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px lightgray;
+    width: 185px;
+    justify-content: left;
+}
+
+.button_howto:hover h2 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+.button_howto:hover h3 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================== about page ============= */
+
+.about_bg {
+    background-color: darkseagreen;
+}
+
+.about {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    top: 15%;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    animation: fadein 2.5s ease;
+    overflow: visible;
+}
+
+.about ul {
+    padding-left: 100px;
+    font-size: 22px;
+}
+
+.encourage_select {
+    text-align: center;
+    font-size: 35px;
+    color: lightgoldenrodyellow;
+    border: 5px lightgoldenrodyellow solid;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    width: 1000px;
+    margin-left: -100px;
+}
+
+.encourage_select:hover {
+    color: white;
+    border: 5px white solid;
+    padding: 30px;
+    font-size: 40px;
+    text-shadow: 0px 0px 20px lightgrey;
+    box-shadow: 0px 0px 20px lightgrey;
+}
+
+/*====================== how to play ============= */
+
+/* 1 */
+
+.how_to_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: justify;
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    top: 15%;
+    opacity: 0;
+    animation: fadeInOut 10s ease;
+    animation-fill-mode: both;
+}
+
+.button_back {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    margin: 100px;
+    border-radius: 25px;
+    opacity: 0;
+    animation: fadeInOut 10s ease;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    transition: box-shadow 1s;
+}
+
+.button_next {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    right: 0;
+    bottom: 0;
+    margin: 100px;
+    border-radius: 25px;
+    opacity: 0;
+    animation: fadeInOut 10s ease;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    transition: box-shadow 1s;
+}
+
+.button_back:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+.button_next:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 2 */
+
+.how_to_2 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: justify;
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    top: 15%;
+    opacity: 0;
+    animation: fadeInOut 15s ease;
+    animation-delay: 11s;
+    animation-fill-mode: both;
+}
+
+.button_index {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    color: white;
+    text-shadow: 0px 0px 5px darkgray;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px darkgray;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 33px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    vertical-align: bottom;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: left;
+    transition: 0.5s;
+    opacity: 0;
+    animation: fadeInOut 15s ease;
+    animation-delay: 12s;
+    animation-fill-mode: both;
+}
+
+.button_index h2 {
+    color: white;
+    text-shadow: 0px 0px 5px darkgray;
+    font-size: 70px;
+    padding-top: 3px;
+    padding-left: 3.5px;
+}
+
+.button_index h3 {
+    color: white;
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.button_index:hover {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px lightgray;
+    width: 150px;
+    justify-content: left;
+}
+
+.button_index:hover h2 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+.button_index:hover h3 {
+    color: white;
+    text-shadow: 0px 0px 5px lightgray;
+}
+
+/* 3 */
+
+.how_to_3 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: justify;
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    top: 15%;
+    opacity: 0;
+    animation: fadeInNoOut 20s ease;
+    animation-delay: 27s;
+    animation-fill-mode: both;
+    z-index: 5;
+}
+
+@keyframes fadeInNoOut {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.colored_text {
+    color: pink;
+    font-style: italic;
+    transition: 0.5s;
+    text-shadow: 0px 0px 5px gray;
+}
+
+.colored_text a {
+    color: pink;
+    font-style: italic;
+    transition: 0.5s;
+}
+
+.colored_text:hover a {
+    color: white;
+    text-shadow: 0px 0px 5px white;
+    font-style: normal;
+    letter-spacing: 6px;
+}
+
+.ex_img {
+    display: inline;
+    width: 100px;
+    position: relative;
+}
+
+.ex_img_1 {
+    left: 0px;
+    z-index: 1;
+    transition: 1s;
+}
+
+.ex_img_1:hover {
+    opacity: 0;
+}
+
+.ex_img_1:hover + .ex_img_2 {
+    opacity: 1;
+}
+
+.ex_img_2 {
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+}
+
+.direction_arrow_1 {
+    position: absolute;
+    left: 70%;
+    top: 140%;
+    width: 500px;
+    transform: rotate(90deg);
+    opacity: 0;
+    animation: fadeInOut 10s ease;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+.direction_arrow_2 {
+    position: absolute;
+    right: 70%;
+    top: 160%;
+    width: 450px;
+    transform: rotate(270deg) scaleX(-1);
+    opacity: 0;
+    animation: fadeInOut 10s ease;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+.direction_arrow_3 {
+    position: absolute;
+    left: 70%;
+    top: 80%;
+    width: 400px;
+    opacity: 0;
+    animation: fadeInOut 15s ease;
+    animation-delay: 12s;
+    animation-fill-mode: both;
+}
+
+/*====================== purpose ============= */
+
+.purpose_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    top: 15%;
+    opacity: 0;
+    animation: fadeInOut 20s ease;
+    animation-fill-mode: both;
+}
+
+.cw_1 {
+    font-family: 'Francois One', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    top: 15%;
+    opacity: 0;
+    animation: fadeInNoOut 20s ease;
+    animation-delay: 21s;
+    animation-fill-mode: both;
+}
+
+.button_next_purpose {
+    z-index: 100px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: normal;
+    font-family: 'Francois One', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    right: 0;
+    bottom: 0;
+    margin: 100px;
+    border-radius: 25px;
+    opacity: 0;
+    animation: fadeInNoOut 20s ease;
+    animation-delay: 24s;
+    animation-fill-mode: both;
+    transition: box-shadow 1s;
+}
+
+.button_next_purpose:hover {
+    color: white;
+    transition: color 0.5s;
+    box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.7);
+}
+
+.cws {
+    font-size: 25px;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+    /* "can't touch this" */
+    /* CODE CITATION:
+    Title: How to disable text selection highlighting
+    Link: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting
+    Author: community wiki
+    Date Last Edited: 9/24/19
+    Date Accessed: 9/30/19 */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+.cws:active {
+    font-size: 25px;
+    color: white;
+    text-shadow: none;
+}

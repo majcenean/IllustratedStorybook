@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE BARBER-SURGEON</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/regis/regis.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_regis_beforereveal.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="regis_resolution_bg">
+    <div class="home_1">
+        "Well, master physician, come over to our camp in the fields."
+        <br><br>
+        Regis looked at him long and hard. "My thanks," he said finally. "But I have a better idea. I invite you to my house. My summer abode is more of a shack than a cottage, and a small one at that. You'll have no choice but to sleep under the stars. But there's a spring nearby, and inside, a hearth."
+        <br><br>
+        "We'll gladly take you up on your invitation."
+    </div>
+    <div class="home_2">
+        Bathed in the moonlight, Regis's shack seemed utterly as if it could have come from a fairy-tale. <br>It could have been a witch's cottage.
+    </div>
+    <div class="home_3">
+        The interior of the cabin was dark and filled with heavy, intoxicating smells from bundles of herbs and spices hanging on the walls. The only furniture was a bed, also covered in herbs, and a crooked table, covered with countless glass, earthenware and porcelain bottles. The scant light that allowed them to see it all came from a squat, hourglass-like pot-bellied stove. The stove was wrapped around with a web of glowing tubes, bent into arcs and spirals. Under one of these, was a wooden bowl, which was catching clear liquid falling from the tube.
+    </div>
+
+    <img src="../../../img/regis/cottage.png" alt="humble abode" class="cottage">
+    
+    <img src="../../../img/regis/alchemy.png" alt="mandrake time" class="alchemy">
+    
+
+    <!-- BACK BUTTON-->
+    <a href="regis_bg.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="../turn/regis_turn_1.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

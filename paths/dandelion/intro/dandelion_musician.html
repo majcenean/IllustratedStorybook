@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE POET</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/dandelion/dandelion.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_dandelion.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="dandelion_bg">
+
+        <div class="lute_1">
+            "By the gods, Geralt." Dandelion stopped playing, hugged the lute and touched it with his cheek. "This wood sings on its own! <span class="lute_emph">These strings are alive! What wonderful tonality!</span> Bloody hell, a couple of kicks and a bit of fear is a pretty low price to pay for such a superb lute. I'd have let myself be kicked from dawn to dusk if I'd known what I was going to get."
+        </div>
+        <div class="lute_2">
+            Dandelion's soft, mournful singing and the music he raised from the lute's strings, <span class="lute_emph">murmuring like a stream flowing over pebbles</span> drifted to her from the chamber at the end of the corridor.
+        </div>
+        <div class="lute_3">
+            "Songs and ballads" — the musician bowed - "never end, dear lady, because <span class="lute_emph">poetry is eternal and immortal,</span> it knows no beginning, it knows no end."
+        </div>
+
+    <div class="lute_img"><img src="../../../img/dandelion/lute.png" alt="the elven lute" width="400px" height="400px"></div>
+
+    <!-- BACK BUTTON-->
+    <a href="dandelion_bg.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="dandelion_girls_girls_girls.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

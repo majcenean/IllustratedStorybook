@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE POET</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/dandelion/dandelion.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_dandelion.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="dandelion_brokilon_bg">
+
+    <div class="brokilon_1">
+        “Once, they gave warnings. They shot an arrow into a tree trunk or into the ground, and that marked the border that you couldn’t cross. <br><br>If a fellow turned back right then, he could get out in one piece. But now it’s different. <br><br><br>Now they shoot to kill at once. (...) I’ll say it one more time: <br><br>If you don’t have to, don’t go there.”
+    </div>
+    <div class="brokilon_2a">
+        “The whole point,”
+    </div>
+    <div class="brokilon_2b">
+        he said, working hard to assume a resolute expression,
+    </div>
+    <div class="brokilon_2c">
+        “is that I <i>do</i> have to.”
+    </div>
+    <div class="brokilon_3">
+        The years of practice paid off. The troubadour’s voice sounded beautiful and menacing, austere and cold. It rang with iron and valour.
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="geralt_injured.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="dandelion_brokilon_2.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body></html>

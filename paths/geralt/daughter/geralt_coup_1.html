@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE WIEDŹMIN</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/geralt/geralt.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_geralt.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="coup_bg">
+
+    <div class="coup_1">
+        “Run, Ciri, run. They’re close. I’ll stop them, you run. Fast as you can! Just like you are used to from training!”
+        <br><br>
+        “Are you abandoning me too?”
+        <br><br>
+        “I’ll be right behind you. But don’t look back.”
+    </div>
+    <div class="coup_2">
+        A massacre was played out before Cahir’s eyes, wide with terror.
+        <br><br>
+        The fair-haired girl, who had wounded him a moment earlier, had been fast, had been unbelievably lithe, had been like a mother cat defending her kittens.
+        <br><br>
+        But the white-haired fiend who had fallen amongst the men was like a tiger.
+        <div class="coup_3">
+        The fair-haired maid of Cintra seemed insane.
+        <br><br>The white-haired fiend was not insane. He was calm and cold.
+        <br><br>And killed calmly and coldly.
+        </div>
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="geralt_ciri.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="geralt_coup_2.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+
+
+</body></html>

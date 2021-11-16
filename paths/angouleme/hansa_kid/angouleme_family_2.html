@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE BANDIT GIRL</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/angouleme/angouleme.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_angouleme.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+        var msg = document.title;
+        var speed = 150;
+        var endChar = " . . . ";
+        var pos = 15;
+
+        function moveTitle() {
+            var ml = msg.length;
+
+            title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            document.title = title;
+
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
+
+        moveTitle();
+    </script>
+</head>
+
+<body class="angouleme_backstory_bg">
+
+
+    <div class="a_family_of_sorts_1a">
+        <span class="fam_milva">"Shut it, you brat!</span> And don't call me aunty."
+        <br><br>
+        "Come, come," Regis interjected placatingly. "Girls, take it easy. Milva, Angouleme, let there be concord. United we stand, divided we fall."
+    </div>
+    <div class="a_family_of_sorts_1b">
+        "It's impossible for the tracks to have been left by a horse (...)"<br><br>
+        "When I say a horse, I meant a horse!"<br><br>
+        Milva, as usual, preferred practice to theory. She dismounted and bent over, pushing her hat back on her head.
+        <br><br>
+        <span class="fam_milva">"The pup's right,"</span> she decided after a moment.
+    </div>
+
+    <div class="a_family_of_sorts_2a">
+        "It's like <span class="fam_regis">our darling Angoulême's catchphrase, which brims with youthful charm</span> — "There comes a time when you've either got to shit or free up the shithouse. In other words—"
+        <br><br>
+        "Spare the other words. Those charming ones will suffice."
+    </div>
+
+    <div class="a_family_of_sorts_2b">
+        "Well, I never!" she said right after she'd been sat down in a chair and had her hands handcuffed behind the backrest. "Look what the cat's dragged in!"
+    </div>
+    <div class="a_family_of_sorts_2c">
+        "Oho," Regis said placidly. <span class="fam_regis">"Look what the cat dragged in."</span>
+    </div>
+
+    <div class="a_family_of_sorts_3">
+        "Angoulême, please. <br>There, <span class="fam_geralt">eat some bread with patê.</span>"
+    </div>
+    
+    <div class="a_family_of_sorts_4a">
+        "I have a problem... Geralt wants to leave me here when he goes back on the road. He says," she snapped, "that he can't put me at risk, and similar rubbish. 
+    </div>
+    <div class="a_family_of_sorts_4b">
+        And I want to go with him, with Geralt, because <i>it's only when I'm with him I'm not afraid</i> that the coroner will catch me."
+    </div>
+
+
+    <!-- BACK BUTTON-->
+    <a href="angouleme_family_1.html">
+        <div class="button_back">
+            BACK
+            <br>&#8617;
+            <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- NEXT BUTTON-->
+    <a href="angouleme_family_3.html">
+        <div class="button_next">
+            NEXT
+            <br>&#8618;
+            <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+        </div>
+    </a>
+
+    <!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+
+</body></html>

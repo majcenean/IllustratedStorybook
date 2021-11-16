@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>THE BARBER-SURGEON</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/regis/regis.css">
+    <link rel="icon" type="image/png" href="../../../img/favicons/favicon_regis_beforereveal.png">
+    <!--CODE CITATION:
+TITLE: Javascript Code to Scrolling Page Title
+AUTHOR: Admin, TechTricky
+DATE PUBISHED: 10/2/2011
+DATE ACCESSES: 10/8/2019
+LINK: http://www.techtricky.com/javascript-code-to-scrolling-page-title/
+-->
+    <script type="text/javascript">
+      var msg  = document.title;
+      var speed = 150;
+      var endChar = " . . . ";
+      var pos = 15;
+      
+      function moveTitle()
+      {
+       	var ml = msg.length;
+      		
+      	title = msg.substr(pos,ml) + endChar + msg.substr(0,pos);
+    	document.title = title;
+      	
+        pos++;
+    	if (pos > ml) pos=0;
+        window.setTimeout("moveTitle()",speed);
+      }
+  
+      moveTitle();
+  </script>
+</head>
+<body class="regis_bg">
+<!--Introductory Quote-->
+    <div class="intro_quote">
+        <div class="regis_intro_1">
+        But every dream, if dreamed too long, turns into a nightmare.
+        </div>
+        <div class="regis_intro_2">
+        And we awake from such dreams
+            <span class="regis_intro_emphasis">
+                screaming.
+            </span>
+        </div>
+    </div>
+    
+    <img src="../../../img/backgrounds/regis_bg.png" class="bg_img_1">
+
+<!-- BACK BUTTON-->
+    <a href="../../../index.html">
+    <div class="button_back">
+        BACK
+        <br>&#8617;
+    <!-- LEFT ARROW WITH HOOK [BACK Button]
+    Code: &#8617; -->
+    </div>
+    </a>
+    
+<!-- NEXT BUTTON-->
+    <a href="regis_bg.html">
+    <div class="button_next">
+        NEXT
+        <br>&#8618;
+    <!-- RIGHT ARROW WITH HOOK [NEXT Button]
+    Code: &#8617; -->
+    </div>
+    </a>
+    
+<!-- INDEX BUTTON-->
+    <a href="../../../index.html">
+        <div class="button_index">
+            <h2>&#8962;</h2>
+            <h3>CHOOSE ANOTHER</h3>
+        </div>
+    </a>
+    
+</body>
+
+</html>
